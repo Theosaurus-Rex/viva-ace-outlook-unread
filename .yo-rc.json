@@ -1,0 +1,14 @@
+{
+  "@microsoft/generator-sharepoint": {
+    "plusBeta": true,
+    "isCreatingSolution": true,
+    "environment": "spo",
+    "version": "1.13.0-beta.15",
+    "libraryName": "adaptive-card",
+    "libraryId": "aeb4a7f7-8e1e-4ae0-8771-66d21eb7bbca",
+    "packageManager": "npm",
+    "isDomainIsolated": false,
+    "componentType": "adaptiveCardExtension",
+    "templateType": "Basic"
+  }
+}
