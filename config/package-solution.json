@@ -13,9 +13,17 @@
       "privacyUrl": "",
       "termsOfUseUrl": "",
       "mpnId": ""
-    }
+    },
+    "webApiPermissionRequests": [
+      {
+        "resource": "Microsoft Graph",
+        "scope": "Mail.Read"
+      }
+    
+]
   },
   "paths": {
     "zippedPackage": "solution/adaptive-card.sppkg"
   }
+  
 }

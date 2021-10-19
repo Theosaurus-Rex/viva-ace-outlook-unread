@@ -12,11 +12,11 @@ export class CardView extends BaseBasicCardView<IHelloWorldAdaptiveCardExtension
   public get cardButtons(): [ICardButton] | [ICardButton, ICardButton] | undefined {
     return [
       {
-        title: strings.QuickViewButton,
+        title: 'View Messages',
         action: {
-          type: 'QuickView',
+          type: 'ExternalLink',
           parameters: {
-            view: QUICK_VIEW_REGISTRY_ID
+            target: "http://outlook.office.com"
           }
         }
       }
@@ -25,7 +25,8 @@ export class CardView extends BaseBasicCardView<IHelloWorldAdaptiveCardExtension
 
   public get data(): IBasicCardParameters {
     return {
-      primaryText: strings.PrimaryText
+      primaryText: `You have ${this.state.unreadCount} unread messages`,
+      unreadCount: this.state.unreadCount
     };
   }
 
@@ -33,7 +34,7 @@ export class CardView extends BaseBasicCardView<IHelloWorldAdaptiveCardExtension
     return {
       type: 'ExternalLink',
       parameters: {
-        target: 'https://www.bing.com'
+        target: 'https://outlook.office.com'
       }
     };
   }

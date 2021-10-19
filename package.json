@@ -9,17 +9,21 @@
     "test": "gulp test"
   },
   "dependencies": {
+    "@azure/msal-browser": "^2.18.0",
+    "@microsoft/sp-adaptive-card-extension-base": "1.13.0-beta.15",
     "@microsoft/sp-core-library": "1.13.0-beta.15",
+    "@microsoft/sp-http": "^1.12.1",
     "@microsoft/sp-property-pane": "1.13.0-beta.15",
-    "@microsoft/sp-adaptive-card-extension-base": "1.13.0-beta.15"
+    "axios": "^0.23.0"
   },
   "devDependencies": {
-    "@microsoft/sp-build-web": "1.13.0-beta.15",
-    "@microsoft/sp-tslint-rules": "1.13.0-beta.15",
-    "@microsoft/sp-module-interfaces": "1.13.0-beta.15",
+    "@microsoft/microsoft-graph-types": "^2.7.0",
     "@microsoft/rush-stack-compiler-3.7": "0.2.3",
-    "gulp": "~4.0.2",
+    "@microsoft/sp-build-web": "1.13.0-beta.15",
+    "@microsoft/sp-module-interfaces": "1.13.0-beta.15",
+    "@microsoft/sp-tslint-rules": "1.13.0-beta.15",
+    "@types/webpack-env": "1.13.1",
     "ajv": "~5.2.2",
-    "@types/webpack-env": "1.13.1"
+    "gulp": "~4.0.2"
   }
 }

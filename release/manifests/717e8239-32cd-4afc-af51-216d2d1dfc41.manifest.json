@@ -1,0 +1,53 @@
+{
+  "id": "717e8239-32cd-4afc-af51-216d2d1dfc41",
+  "alias": "HelloWorldAdaptiveCardExtension",
+  "componentType": "AdaptiveCardExtension",
+  "version": "0.0.1",
+  "manifestVersion": 2,
+  "requiresCustomScript": false,
+  "supportedHosts": [
+    "Dashboard",
+    "SharePointWebPart"
+  ],
+  "preconfiguredEntries": [
+    {
+      "groupId": "bd067b1e-3ad5-4d5d-a5fe-505f07d7f59c",
+      "group": {
+        "default": "Dashboard"
+      },
+      "title": {
+        "default": "Mail"
+      },
+      "description": {
+        "default": "Unread mail needing your attention"
+      },
+      "officeFabricIconFontName": "OutlookLogo",
+      "properties": {
+        "title": "Mail",
+        "description": "Unread mail needing your attention",
+        "iconProperty": "OutlookLogo"
+      }
+    }
+  ],
+  "loaderConfig": {
+    "internalModuleBaseUrls": [
+      "<!-- PATH TO CDN -->"
+    ],
+    "entryModuleId": "hello-world-adaptive-card-extension",
+    "scriptResources": {
+      "hello-world-adaptive-card-extension": {
+        "type": "path",
+        "path": "hello-world-adaptive-card-extension_cd5a48913cd5556b7339.js"
+      },
+      "HelloWorldAdaptiveCardExtensionStrings": {
+        "type": "path",
+        "path": "HelloWorldAdaptiveCardExtensionStrings_en-us_30e3c2906cdf48c15ab8396cde6f4470.js"
+      },
+      "@microsoft/sp-adaptive-card-extension-base": {
+        "type": "component",
+        "id": "eeec822e-c28a-46b4-affc-7058e4c1aa80",
+        "version": "1.13.0"
+      }
+    }
+  }
+}
