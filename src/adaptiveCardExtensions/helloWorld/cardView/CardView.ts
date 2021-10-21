@@ -12,7 +12,16 @@ export class CardView extends BaseBasicCardView<IHelloWorldAdaptiveCardExtension
   public get cardButtons(): [ICardButton] | [ICardButton, ICardButton] | undefined {
     return [
       {
-        title: 'View Messages',
+        title: "Preview Messages",
+        action: {
+          type: 'QuickView',
+          parameters: {
+            view: QUICK_VIEW_REGISTRY_ID
+          }
+        }
+      },
+      {
+        title: 'Outlook',
         action: {
           type: 'ExternalLink',
           parameters: {
@@ -32,10 +41,10 @@ export class CardView extends BaseBasicCardView<IHelloWorldAdaptiveCardExtension
 
   public get onCardSelection(): IQuickViewCardAction | IExternalLinkCardAction | undefined {
     return {
-      type: 'ExternalLink',
+      type: 'QuickView',
       parameters: {
-        target: 'https://outlook.office.com'
+        view: QUICK_VIEW_REGISTRY_ID
       }
     };
-  }
+  }  
 }
