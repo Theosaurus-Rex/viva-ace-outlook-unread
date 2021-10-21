@@ -37,7 +37,7 @@
     "scriptResources": {
       "hello-world-adaptive-card-extension": {
         "type": "path",
-        "path": "hello-world-adaptive-card-extension_cd5a48913cd5556b7339.js"
+        "path": "hello-world-adaptive-card-extension_88d21863ef2fc2999f55.js"
       },
       "HelloWorldAdaptiveCardExtensionStrings": {
         "type": "path",

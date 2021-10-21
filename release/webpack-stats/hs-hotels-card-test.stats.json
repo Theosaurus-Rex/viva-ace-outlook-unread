@@ -2,14 +2,14 @@
   "errors": [],
   "warnings": [],
   "version": "4.44.2",
-  "hash": "88756d94201974c8c758",
-  "time": 594,
-  "builtAt": 1634620453095,
+  "hash": "f8e02bf6a5783d5f24ec",
+  "time": 916,
+  "builtAt": 1634856317581,
   "publicPath": "",
   "outputPath": "C:\\Users\\TheoHarrisE²\\Desktop\\code\\hs-hotels-card-test\\dist",
   "assetsByChunkName": {
     "HelloWorld-property-pane": "chunk.HelloWorld-property-pane_d74bf9b629526c7e5db1.js",
-    "hello-world-adaptive-card-extension": "hello-world-adaptive-card-extension_cd5a48913cd5556b7339.js"
+    "hello-world-adaptive-card-extension": "hello-world-adaptive-card-extension_88d21863ef2fc2999f55.js"
   },
   "assets": [
     {
@@ -51,8 +51,8 @@
       "emitted": true
     },
     {
-      "name": "hello-world-adaptive-card-extension_cd5a48913cd5556b7339.js",
-      "size": 8697,
+      "name": "hello-world-adaptive-card-extension_88d21863ef2fc2999f55.js",
+      "size": 8706,
       "chunks": [
         1
       ],
@@ -72,7 +72,7 @@
         1
       ],
       "assets": [
-        "hello-world-adaptive-card-extension_cd5a48913cd5556b7339.js"
+        "hello-world-adaptive-card-extension_88d21863ef2fc2999f55.js"
       ],
       "children": {},
       "childAssets": {}
@@ -84,7 +84,7 @@
         1
       ],
       "assets": [
-        "hello-world-adaptive-card-extension_cd5a48913cd5556b7339.js"
+        "hello-world-adaptive-card-extension_88d21863ef2fc2999f55.js"
       ],
       "children": {},
       "childAssets": {}
@@ -157,7 +157,7 @@
               "moduleName": "./lib/adaptiveCardExtensions/helloWorld/HelloWorldAdaptiveCardExtension.js",
               "type": "import()",
               "userRequest": "./HelloWorldPropertyPane",
-              "loc": "133:15-135:35"
+              "loc": "127:15-129:35"
             }
           ],
           "usedExports": true,
@@ -178,7 +178,7 @@
           "module": "C:\\Users\\TheoHarrisE²\\Desktop\\code\\hs-hotels-card-test\\lib\\adaptiveCardExtensions\\helloWorld\\HelloWorldAdaptiveCardExtension.js",
           "moduleIdentifier": "C:\\Users\\TheoHarrisE²\\Desktop\\code\\hs-hotels-card-test\\lib\\adaptiveCardExtensions\\helloWorld\\HelloWorldAdaptiveCardExtension.js",
           "moduleName": "./lib/adaptiveCardExtensions/helloWorld/HelloWorldAdaptiveCardExtension.js",
-          "loc": "133:15-135:35",
+          "loc": "127:15-129:35",
           "request": "./HelloWorldPropertyPane",
           "reasons": []
         }
@@ -189,14 +189,14 @@
       "rendered": true,
       "initial": true,
       "entry": true,
-      "size": 12635,
+      "size": 12180,
       "names": [
         "hello-world-adaptive-card-extension"
       ],
       "files": [
-        "hello-world-adaptive-card-extension_cd5a48913cd5556b7339.js"
+        "hello-world-adaptive-card-extension_88d21863ef2fc2999f55.js"
       ],
-      "hash": "1b7f9e793fe60fdd1898",
+      "hash": "de6929ec3db36b118068",
       "siblings": [],
       "parents": [],
       "children": [
@@ -313,7 +313,7 @@
               "moduleName": "./lib/adaptiveCardExtensions/helloWorld/HelloWorldAdaptiveCardExtension.js + 2 modules",
               "type": "cjs require",
               "userRequest": "./assets/SharePointLogo.svg",
-              "loc": "126:51-89"
+              "loc": "120:51-89"
             }
           ],
           "usedExports": true,
@@ -330,7 +330,7 @@
           "name": "./lib/adaptiveCardExtensions/helloWorld/HelloWorldAdaptiveCardExtension.js + 2 modules",
           "index": 0,
           "index2": 6,
-          "size": 11801,
+          "size": 11346,
           "cacheable": true,
           "built": true,
           "optional": false,
@@ -374,7 +374,7 @@
               "name": "./lib/adaptiveCardExtensions/helloWorld/HelloWorldAdaptiveCardExtension.js",
               "index": 0,
               "index2": 6,
-              "size": 7964,
+              "size": 7509,
               "cacheable": true,
               "built": true,
               "optional": false,
@@ -408,7 +408,7 @@
                 "ModuleConcatenation bailout: Module is an entry point"
               ],
               "depth": 0,
-              "source": "var __extends = (this && this.__extends) || (function () {\r\n    var extendStatics = function (d, b) {\r\n        extendStatics = Object.setPrototypeOf ||\r\n            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||\r\n            function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };\r\n        return extendStatics(d, b);\r\n    };\r\n    return function (d, b) {\r\n        extendStatics(d, b);\r\n        function __() { this.constructor = d; }\r\n        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());\r\n    };\r\n})();\r\nvar __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {\r\n    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }\r\n    return new (P || (P = Promise))(function (resolve, reject) {\r\n        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }\r\n        function rejected(value) { try { step(generator[\"throw\"](value)); } catch (e) { reject(e); } }\r\n        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }\r\n        step((generator = generator.apply(thisArg, _arguments || [])).next());\r\n    });\r\n};\r\nvar __generator = (this && this.__generator) || function (thisArg, body) {\r\n    var _ = { label: 0, sent: function() { if (t[0] & 1) throw t[1]; return t[1]; }, trys: [], ops: [] }, f, y, t, g;\r\n    return g = { next: verb(0), \"throw\": verb(1), \"return\": verb(2) }, typeof Symbol === \"function\" && (g[Symbol.iterator] = function() { return this; }), g;\r\n    function verb(n) { return function (v) { return step([n, v]); }; }\r\n    function step(op) {\r\n        if (f) throw new TypeError(\"Generator is already executing.\");\r\n        while (_) try {\r\n            if (f = 1, y && (t = op[0] & 2 ? y[\"return\"] : op[0] ? y[\"throw\"] || ((t = y[\"return\"]) && t.call(y), 0) : y.next) && !(t = t.call(y, op[1])).done) return t;\r\n            if (y = 0, t) op = [op[0] & 2, t.value];\r\n            switch (op[0]) {\r\n                case 0: case 1: t = op; break;\r\n                case 4: _.label++; return { value: op[1], done: false };\r\n                case 5: _.label++; y = op[1]; op = [0]; continue;\r\n                case 7: op = _.ops.pop(); _.trys.pop(); continue;\r\n                default:\r\n                    if (!(t = _.trys, t = t.length > 0 && t[t.length - 1]) && (op[0] === 6 || op[0] === 2)) { _ = 0; continue; }\r\n                    if (op[0] === 3 && (!t || (op[1] > t[0] && op[1] < t[3]))) { _.label = op[1]; break; }\r\n                    if (op[0] === 6 && _.label < t[1]) { _.label = t[1]; t = op; break; }\r\n                    if (t && _.label < t[2]) { _.label = t[2]; _.ops.push(op); break; }\r\n                    if (t[2]) _.ops.pop();\r\n                    _.trys.pop(); continue;\r\n            }\r\n            op = body.call(thisArg, _);\r\n        } catch (e) { op = [6, e]; y = 0; } finally { f = t = 0; }\r\n        if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };\r\n    }\r\n};\r\nimport { BaseAdaptiveCardExtension } from '@microsoft/sp-adaptive-card-extension-base';\r\nimport { CardView } from './cardView/CardView';\r\nimport { QuickView } from './quickView/QuickView';\r\nvar CARD_VIEW_REGISTRY_ID = 'HelloWorld_CARD_VIEW';\r\nexport var QUICK_VIEW_REGISTRY_ID = 'HelloWorld_QUICK_VIEW';\r\nvar HelloWorldAdaptiveCardExtension = /** @class */ (function (_super) {\r\n    __extends(HelloWorldAdaptiveCardExtension, _super);\r\n    function HelloWorldAdaptiveCardExtension() {\r\n        return _super !== null && _super.apply(this, arguments) || this;\r\n    }\r\n    HelloWorldAdaptiveCardExtension.prototype.onInit = function () {\r\n        return __awaiter(this, void 0, void 0, function () {\r\n            return __generator(this, function (_a) {\r\n                switch (_a.label) {\r\n                    case 0:\r\n                        this.state = {\r\n                            description: this.properties.description,\r\n                            unreadCount: null\r\n                        };\r\n                        return [4 /*yield*/, this.getUnreadCount()];\r\n                    case 1:\r\n                        _a.sent();\r\n                        // this.context.msGraphClientFactory .getClient() .then((client): void => {\r\n                        //   //if you want to apply some filter or order by\r\n                        //   let  response:any=client.api(\"/me/messages\").filter('isRead eq false').get();\r\n                        //   //Now you can access the value of response by response.value\r\n                        //   console.log(response);\r\n                        //   });\r\n                        this.cardNavigator.register(CARD_VIEW_REGISTRY_ID, function () { return new CardView(); });\r\n                        this.quickViewNavigator.register(QUICK_VIEW_REGISTRY_ID, function () { return new QuickView(); });\r\n                        return [2 /*return*/, Promise.resolve()];\r\n                }\r\n            });\r\n        });\r\n    };\r\n    HelloWorldAdaptiveCardExtension.prototype.getUnreadCount = function () {\r\n        return __awaiter(this, void 0, void 0, function () {\r\n            var graphClient, error_1;\r\n            var _this = this;\r\n            return __generator(this, function (_a) {\r\n                switch (_a.label) {\r\n                    case 0: return [4 /*yield*/, this.context.msGraphClientFactory.getClient()];\r\n                    case 1:\r\n                        graphClient = _a.sent();\r\n                        _a.label = 2;\r\n                    case 2:\r\n                        _a.trys.push([2, 4, , 5]);\r\n                        return [4 /*yield*/, graphClient\r\n                                .api('/me/messages')\r\n                                .version('v1.0')\r\n                                .filter('isRead eq false&count=true')\r\n                                .get(function (error, response, rawResponse) {\r\n                                _this.setState({ unreadCount: response.value.length });\r\n                                console.log(\"getUnreadCount RESPONSE\", response);\r\n                            })];\r\n                    case 3:\r\n                        _a.sent();\r\n                        return [3 /*break*/, 5];\r\n                    case 4:\r\n                        error_1 = _a.sent();\r\n                        console.log(error_1);\r\n                        return [3 /*break*/, 5];\r\n                    case 5: return [2 /*return*/];\r\n                }\r\n            });\r\n        });\r\n    };\r\n    Object.defineProperty(HelloWorldAdaptiveCardExtension.prototype, \"title\", {\r\n        get: function () {\r\n            return this.properties.title;\r\n        },\r\n        enumerable: true,\r\n        configurable: true\r\n    });\r\n    Object.defineProperty(HelloWorldAdaptiveCardExtension.prototype, \"iconProperty\", {\r\n        get: function () {\r\n            return this.properties.iconProperty || require('./assets/SharePointLogo.svg');\r\n        },\r\n        enumerable: true,\r\n        configurable: true\r\n    });\r\n    HelloWorldAdaptiveCardExtension.prototype.loadPropertyPaneResources = function () {\r\n        var _this = this;\r\n        return import(\r\n        /* webpackChunkName: 'HelloWorld-property-pane'*/\r\n        './HelloWorldPropertyPane')\r\n            .then(function (component) {\r\n            _this._deferredPropertyPane = new component.HelloWorldPropertyPane();\r\n        });\r\n    };\r\n    HelloWorldAdaptiveCardExtension.prototype.renderCard = function () {\r\n        return CARD_VIEW_REGISTRY_ID;\r\n    };\r\n    HelloWorldAdaptiveCardExtension.prototype.getPropertyPaneConfiguration = function () {\r\n        return this._deferredPropertyPane.getPropertyPaneConfiguration();\r\n    };\r\n    return HelloWorldAdaptiveCardExtension;\r\n}(BaseAdaptiveCardExtension));\r\nexport default HelloWorldAdaptiveCardExtension;\r\n//# sourceMappingURL=HelloWorldAdaptiveCardExtension.js.map"
+              "source": "var __extends = (this && this.__extends) || (function () {\r\n    var extendStatics = function (d, b) {\r\n        extendStatics = Object.setPrototypeOf ||\r\n            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||\r\n            function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };\r\n        return extendStatics(d, b);\r\n    };\r\n    return function (d, b) {\r\n        extendStatics(d, b);\r\n        function __() { this.constructor = d; }\r\n        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());\r\n    };\r\n})();\r\nvar __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {\r\n    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }\r\n    return new (P || (P = Promise))(function (resolve, reject) {\r\n        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }\r\n        function rejected(value) { try { step(generator[\"throw\"](value)); } catch (e) { reject(e); } }\r\n        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }\r\n        step((generator = generator.apply(thisArg, _arguments || [])).next());\r\n    });\r\n};\r\nvar __generator = (this && this.__generator) || function (thisArg, body) {\r\n    var _ = { label: 0, sent: function() { if (t[0] & 1) throw t[1]; return t[1]; }, trys: [], ops: [] }, f, y, t, g;\r\n    return g = { next: verb(0), \"throw\": verb(1), \"return\": verb(2) }, typeof Symbol === \"function\" && (g[Symbol.iterator] = function() { return this; }), g;\r\n    function verb(n) { return function (v) { return step([n, v]); }; }\r\n    function step(op) {\r\n        if (f) throw new TypeError(\"Generator is already executing.\");\r\n        while (_) try {\r\n            if (f = 1, y && (t = op[0] & 2 ? y[\"return\"] : op[0] ? y[\"throw\"] || ((t = y[\"return\"]) && t.call(y), 0) : y.next) && !(t = t.call(y, op[1])).done) return t;\r\n            if (y = 0, t) op = [op[0] & 2, t.value];\r\n            switch (op[0]) {\r\n                case 0: case 1: t = op; break;\r\n                case 4: _.label++; return { value: op[1], done: false };\r\n                case 5: _.label++; y = op[1]; op = [0]; continue;\r\n                case 7: op = _.ops.pop(); _.trys.pop(); continue;\r\n                default:\r\n                    if (!(t = _.trys, t = t.length > 0 && t[t.length - 1]) && (op[0] === 6 || op[0] === 2)) { _ = 0; continue; }\r\n                    if (op[0] === 3 && (!t || (op[1] > t[0] && op[1] < t[3]))) { _.label = op[1]; break; }\r\n                    if (op[0] === 6 && _.label < t[1]) { _.label = t[1]; t = op; break; }\r\n                    if (t && _.label < t[2]) { _.label = t[2]; _.ops.push(op); break; }\r\n                    if (t[2]) _.ops.pop();\r\n                    _.trys.pop(); continue;\r\n            }\r\n            op = body.call(thisArg, _);\r\n        } catch (e) { op = [6, e]; y = 0; } finally { f = t = 0; }\r\n        if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };\r\n    }\r\n};\r\nimport { BaseAdaptiveCardExtension } from '@microsoft/sp-adaptive-card-extension-base';\r\nimport { CardView } from './cardView/CardView';\r\nimport { QuickView } from './quickView/QuickView';\r\nvar CARD_VIEW_REGISTRY_ID = 'HelloWorld_CARD_VIEW';\r\nexport var QUICK_VIEW_REGISTRY_ID = 'HelloWorld_QUICK_VIEW';\r\nvar HelloWorldAdaptiveCardExtension = /** @class */ (function (_super) {\r\n    __extends(HelloWorldAdaptiveCardExtension, _super);\r\n    function HelloWorldAdaptiveCardExtension() {\r\n        return _super !== null && _super.apply(this, arguments) || this;\r\n    }\r\n    HelloWorldAdaptiveCardExtension.prototype.onInit = function () {\r\n        return __awaiter(this, void 0, void 0, function () {\r\n            return __generator(this, function (_a) {\r\n                switch (_a.label) {\r\n                    case 0:\r\n                        this.state = {\r\n                            description: this.properties.description,\r\n                            unreadCount: null\r\n                        };\r\n                        return [4 /*yield*/, this.getUnreadCount()];\r\n                    case 1:\r\n                        _a.sent();\r\n                        this.cardNavigator.register(CARD_VIEW_REGISTRY_ID, function () { return new CardView(); });\r\n                        this.quickViewNavigator.register(QUICK_VIEW_REGISTRY_ID, function () { return new QuickView(); });\r\n                        return [2 /*return*/, Promise.resolve()];\r\n                }\r\n            });\r\n        });\r\n    };\r\n    HelloWorldAdaptiveCardExtension.prototype.getUnreadCount = function () {\r\n        return __awaiter(this, void 0, void 0, function () {\r\n            var graphClient, error_1;\r\n            var _this = this;\r\n            return __generator(this, function (_a) {\r\n                switch (_a.label) {\r\n                    case 0: return [4 /*yield*/, this.context.msGraphClientFactory.getClient()];\r\n                    case 1:\r\n                        graphClient = _a.sent();\r\n                        _a.label = 2;\r\n                    case 2:\r\n                        _a.trys.push([2, 4, , 5]);\r\n                        return [4 /*yield*/, graphClient\r\n                                .api('/me/messages')\r\n                                .version('v1.0')\r\n                                .filter('isRead ne true&$count=true&$top=999')\r\n                                .get(function (error, response, rawResponse) {\r\n                                _this.setState({ unreadCount: response.value.length });\r\n                                console.log(\"getUnreadCount RESPONSE\", response);\r\n                            })];\r\n                    case 3:\r\n                        _a.sent();\r\n                        return [3 /*break*/, 5];\r\n                    case 4:\r\n                        error_1 = _a.sent();\r\n                        console.log(error_1);\r\n                        return [3 /*break*/, 5];\r\n                    case 5: return [2 /*return*/];\r\n                }\r\n            });\r\n        });\r\n    };\r\n    Object.defineProperty(HelloWorldAdaptiveCardExtension.prototype, \"title\", {\r\n        get: function () {\r\n            return this.properties.title;\r\n        },\r\n        enumerable: true,\r\n        configurable: true\r\n    });\r\n    Object.defineProperty(HelloWorldAdaptiveCardExtension.prototype, \"iconProperty\", {\r\n        get: function () {\r\n            return this.properties.iconProperty || require('./assets/SharePointLogo.svg');\r\n        },\r\n        enumerable: true,\r\n        configurable: true\r\n    });\r\n    HelloWorldAdaptiveCardExtension.prototype.loadPropertyPaneResources = function () {\r\n        var _this = this;\r\n        return import(\r\n        /* webpackChunkName: 'HelloWorld-property-pane'*/\r\n        './HelloWorldPropertyPane')\r\n            .then(function (component) {\r\n            _this._deferredPropertyPane = new component.HelloWorldPropertyPane();\r\n        });\r\n    };\r\n    HelloWorldAdaptiveCardExtension.prototype.renderCard = function () {\r\n        return CARD_VIEW_REGISTRY_ID;\r\n    };\r\n    HelloWorldAdaptiveCardExtension.prototype.getPropertyPaneConfiguration = function () {\r\n        return this._deferredPropertyPane.getPropertyPaneConfiguration();\r\n    };\r\n    return HelloWorldAdaptiveCardExtension;\r\n}(BaseAdaptiveCardExtension));\r\nexport default HelloWorldAdaptiveCardExtension;\r\n//# sourceMappingURL=HelloWorldAdaptiveCardExtension.js.map"
             },
             {
               "id": null,
@@ -453,7 +453,7 @@
                   "moduleName": "./lib/adaptiveCardExtensions/helloWorld/HelloWorldAdaptiveCardExtension.js",
                   "type": "harmony import specifier",
                   "userRequest": "./cardView/CardView",
-                  "loc": "78:100-108"
+                  "loc": "72:100-108"
                 }
               ],
               "usedExports": [
@@ -509,7 +509,7 @@
                   "moduleName": "./lib/adaptiveCardExtensions/helloWorld/HelloWorldAdaptiveCardExtension.js",
                   "type": "harmony import specifier",
                   "userRequest": "./quickView/QuickView",
-                  "loc": "79:106-115"
+                  "loc": "73:106-115"
                 }
               ],
               "usedExports": [
@@ -663,7 +663,7 @@
               "moduleName": "./lib/adaptiveCardExtensions/helloWorld/HelloWorldAdaptiveCardExtension.js + 2 modules",
               "type": "harmony import specifier",
               "userRequest": "@microsoft/sp-adaptive-card-extension-base",
-              "loc": "147:2-27"
+              "loc": "141:2-27"
             }
           ],
           "usedExports": [
@@ -728,7 +728,7 @@
           "moduleName": "./lib/adaptiveCardExtensions/helloWorld/HelloWorldAdaptiveCardExtension.js",
           "type": "import()",
           "userRequest": "./HelloWorldPropertyPane",
-          "loc": "133:15-135:35"
+          "loc": "127:15-129:35"
         }
       ],
       "usedExports": true,
@@ -850,7 +850,7 @@
           "moduleName": "./lib/adaptiveCardExtensions/helloWorld/HelloWorldAdaptiveCardExtension.js + 2 modules",
           "type": "cjs require",
           "userRequest": "./assets/SharePointLogo.svg",
-          "loc": "126:51-89"
+          "loc": "120:51-89"
         }
       ],
       "usedExports": true,
@@ -893,7 +893,7 @@
       "name": "./lib/adaptiveCardExtensions/helloWorld/HelloWorldAdaptiveCardExtension.js + 2 modules",
       "index": 0,
       "index2": 6,
-      "size": 11801,
+      "size": 11346,
       "cacheable": true,
       "built": true,
       "optional": false,
@@ -937,7 +937,7 @@
           "name": "./lib/adaptiveCardExtensions/helloWorld/HelloWorldAdaptiveCardExtension.js",
           "index": 0,
           "index2": 6,
-          "size": 7964,
+          "size": 7509,
           "cacheable": true,
           "built": true,
           "optional": false,
@@ -971,7 +971,7 @@
             "ModuleConcatenation bailout: Module is an entry point"
           ],
           "depth": 0,
-          "source": "var __extends = (this && this.__extends) || (function () {\r\n    var extendStatics = function (d, b) {\r\n        extendStatics = Object.setPrototypeOf ||\r\n            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||\r\n            function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };\r\n        return extendStatics(d, b);\r\n    };\r\n    return function (d, b) {\r\n        extendStatics(d, b);\r\n        function __() { this.constructor = d; }\r\n        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());\r\n    };\r\n})();\r\nvar __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {\r\n    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }\r\n    return new (P || (P = Promise))(function (resolve, reject) {\r\n        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }\r\n        function rejected(value) { try { step(generator[\"throw\"](value)); } catch (e) { reject(e); } }\r\n        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }\r\n        step((generator = generator.apply(thisArg, _arguments || [])).next());\r\n    });\r\n};\r\nvar __generator = (this && this.__generator) || function (thisArg, body) {\r\n    var _ = { label: 0, sent: function() { if (t[0] & 1) throw t[1]; return t[1]; }, trys: [], ops: [] }, f, y, t, g;\r\n    return g = { next: verb(0), \"throw\": verb(1), \"return\": verb(2) }, typeof Symbol === \"function\" && (g[Symbol.iterator] = function() { return this; }), g;\r\n    function verb(n) { return function (v) { return step([n, v]); }; }\r\n    function step(op) {\r\n        if (f) throw new TypeError(\"Generator is already executing.\");\r\n        while (_) try {\r\n            if (f = 1, y && (t = op[0] & 2 ? y[\"return\"] : op[0] ? y[\"throw\"] || ((t = y[\"return\"]) && t.call(y), 0) : y.next) && !(t = t.call(y, op[1])).done) return t;\r\n            if (y = 0, t) op = [op[0] & 2, t.value];\r\n            switch (op[0]) {\r\n                case 0: case 1: t = op; break;\r\n                case 4: _.label++; return { value: op[1], done: false };\r\n                case 5: _.label++; y = op[1]; op = [0]; continue;\r\n                case 7: op = _.ops.pop(); _.trys.pop(); continue;\r\n                default:\r\n                    if (!(t = _.trys, t = t.length > 0 && t[t.length - 1]) && (op[0] === 6 || op[0] === 2)) { _ = 0; continue; }\r\n                    if (op[0] === 3 && (!t || (op[1] > t[0] && op[1] < t[3]))) { _.label = op[1]; break; }\r\n                    if (op[0] === 6 && _.label < t[1]) { _.label = t[1]; t = op; break; }\r\n                    if (t && _.label < t[2]) { _.label = t[2]; _.ops.push(op); break; }\r\n                    if (t[2]) _.ops.pop();\r\n                    _.trys.pop(); continue;\r\n            }\r\n            op = body.call(thisArg, _);\r\n        } catch (e) { op = [6, e]; y = 0; } finally { f = t = 0; }\r\n        if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };\r\n    }\r\n};\r\nimport { BaseAdaptiveCardExtension } from '@microsoft/sp-adaptive-card-extension-base';\r\nimport { CardView } from './cardView/CardView';\r\nimport { QuickView } from './quickView/QuickView';\r\nvar CARD_VIEW_REGISTRY_ID = 'HelloWorld_CARD_VIEW';\r\nexport var QUICK_VIEW_REGISTRY_ID = 'HelloWorld_QUICK_VIEW';\r\nvar HelloWorldAdaptiveCardExtension = /** @class */ (function (_super) {\r\n    __extends(HelloWorldAdaptiveCardExtension, _super);\r\n    function HelloWorldAdaptiveCardExtension() {\r\n        return _super !== null && _super.apply(this, arguments) || this;\r\n    }\r\n    HelloWorldAdaptiveCardExtension.prototype.onInit = function () {\r\n        return __awaiter(this, void 0, void 0, function () {\r\n            return __generator(this, function (_a) {\r\n                switch (_a.label) {\r\n                    case 0:\r\n                        this.state = {\r\n                            description: this.properties.description,\r\n                            unreadCount: null\r\n                        };\r\n                        return [4 /*yield*/, this.getUnreadCount()];\r\n                    case 1:\r\n                        _a.sent();\r\n                        // this.context.msGraphClientFactory .getClient() .then((client): void => {\r\n                        //   //if you want to apply some filter or order by\r\n                        //   let  response:any=client.api(\"/me/messages\").filter('isRead eq false').get();\r\n                        //   //Now you can access the value of response by response.value\r\n                        //   console.log(response);\r\n                        //   });\r\n                        this.cardNavigator.register(CARD_VIEW_REGISTRY_ID, function () { return new CardView(); });\r\n                        this.quickViewNavigator.register(QUICK_VIEW_REGISTRY_ID, function () { return new QuickView(); });\r\n                        return [2 /*return*/, Promise.resolve()];\r\n                }\r\n            });\r\n        });\r\n    };\r\n    HelloWorldAdaptiveCardExtension.prototype.getUnreadCount = function () {\r\n        return __awaiter(this, void 0, void 0, function () {\r\n            var graphClient, error_1;\r\n            var _this = this;\r\n            return __generator(this, function (_a) {\r\n                switch (_a.label) {\r\n                    case 0: return [4 /*yield*/, this.context.msGraphClientFactory.getClient()];\r\n                    case 1:\r\n                        graphClient = _a.sent();\r\n                        _a.label = 2;\r\n                    case 2:\r\n                        _a.trys.push([2, 4, , 5]);\r\n                        return [4 /*yield*/, graphClient\r\n                                .api('/me/messages')\r\n                                .version('v1.0')\r\n                                .filter('isRead eq false&count=true')\r\n                                .get(function (error, response, rawResponse) {\r\n                                _this.setState({ unreadCount: response.value.length });\r\n                                console.log(\"getUnreadCount RESPONSE\", response);\r\n                            })];\r\n                    case 3:\r\n                        _a.sent();\r\n                        return [3 /*break*/, 5];\r\n                    case 4:\r\n                        error_1 = _a.sent();\r\n                        console.log(error_1);\r\n                        return [3 /*break*/, 5];\r\n                    case 5: return [2 /*return*/];\r\n                }\r\n            });\r\n        });\r\n    };\r\n    Object.defineProperty(HelloWorldAdaptiveCardExtension.prototype, \"title\", {\r\n        get: function () {\r\n            return this.properties.title;\r\n        },\r\n        enumerable: true,\r\n        configurable: true\r\n    });\r\n    Object.defineProperty(HelloWorldAdaptiveCardExtension.prototype, \"iconProperty\", {\r\n        get: function () {\r\n            return this.properties.iconProperty || require('./assets/SharePointLogo.svg');\r\n        },\r\n        enumerable: true,\r\n        configurable: true\r\n    });\r\n    HelloWorldAdaptiveCardExtension.prototype.loadPropertyPaneResources = function () {\r\n        var _this = this;\r\n        return import(\r\n        /* webpackChunkName: 'HelloWorld-property-pane'*/\r\n        './HelloWorldPropertyPane')\r\n            .then(function (component) {\r\n            _this._deferredPropertyPane = new component.HelloWorldPropertyPane();\r\n        });\r\n    };\r\n    HelloWorldAdaptiveCardExtension.prototype.renderCard = function () {\r\n        return CARD_VIEW_REGISTRY_ID;\r\n    };\r\n    HelloWorldAdaptiveCardExtension.prototype.getPropertyPaneConfiguration = function () {\r\n        return this._deferredPropertyPane.getPropertyPaneConfiguration();\r\n    };\r\n    return HelloWorldAdaptiveCardExtension;\r\n}(BaseAdaptiveCardExtension));\r\nexport default HelloWorldAdaptiveCardExtension;\r\n//# sourceMappingURL=HelloWorldAdaptiveCardExtension.js.map"
+          "source": "var __extends = (this && this.__extends) || (function () {\r\n    var extendStatics = function (d, b) {\r\n        extendStatics = Object.setPrototypeOf ||\r\n            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||\r\n            function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };\r\n        return extendStatics(d, b);\r\n    };\r\n    return function (d, b) {\r\n        extendStatics(d, b);\r\n        function __() { this.constructor = d; }\r\n        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());\r\n    };\r\n})();\r\nvar __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {\r\n    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }\r\n    return new (P || (P = Promise))(function (resolve, reject) {\r\n        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }\r\n        function rejected(value) { try { step(generator[\"throw\"](value)); } catch (e) { reject(e); } }\r\n        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }\r\n        step((generator = generator.apply(thisArg, _arguments || [])).next());\r\n    });\r\n};\r\nvar __generator = (this && this.__generator) || function (thisArg, body) {\r\n    var _ = { label: 0, sent: function() { if (t[0] & 1) throw t[1]; return t[1]; }, trys: [], ops: [] }, f, y, t, g;\r\n    return g = { next: verb(0), \"throw\": verb(1), \"return\": verb(2) }, typeof Symbol === \"function\" && (g[Symbol.iterator] = function() { return this; }), g;\r\n    function verb(n) { return function (v) { return step([n, v]); }; }\r\n    function step(op) {\r\n        if (f) throw new TypeError(\"Generator is already executing.\");\r\n        while (_) try {\r\n            if (f = 1, y && (t = op[0] & 2 ? y[\"return\"] : op[0] ? y[\"throw\"] || ((t = y[\"return\"]) && t.call(y), 0) : y.next) && !(t = t.call(y, op[1])).done) return t;\r\n            if (y = 0, t) op = [op[0] & 2, t.value];\r\n            switch (op[0]) {\r\n                case 0: case 1: t = op; break;\r\n                case 4: _.label++; return { value: op[1], done: false };\r\n                case 5: _.label++; y = op[1]; op = [0]; continue;\r\n                case 7: op = _.ops.pop(); _.trys.pop(); continue;\r\n                default:\r\n                    if (!(t = _.trys, t = t.length > 0 && t[t.length - 1]) && (op[0] === 6 || op[0] === 2)) { _ = 0; continue; }\r\n                    if (op[0] === 3 && (!t || (op[1] > t[0] && op[1] < t[3]))) { _.label = op[1]; break; }\r\n                    if (op[0] === 6 && _.label < t[1]) { _.label = t[1]; t = op; break; }\r\n                    if (t && _.label < t[2]) { _.label = t[2]; _.ops.push(op); break; }\r\n                    if (t[2]) _.ops.pop();\r\n                    _.trys.pop(); continue;\r\n            }\r\n            op = body.call(thisArg, _);\r\n        } catch (e) { op = [6, e]; y = 0; } finally { f = t = 0; }\r\n        if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };\r\n    }\r\n};\r\nimport { BaseAdaptiveCardExtension } from '@microsoft/sp-adaptive-card-extension-base';\r\nimport { CardView } from './cardView/CardView';\r\nimport { QuickView } from './quickView/QuickView';\r\nvar CARD_VIEW_REGISTRY_ID = 'HelloWorld_CARD_VIEW';\r\nexport var QUICK_VIEW_REGISTRY_ID = 'HelloWorld_QUICK_VIEW';\r\nvar HelloWorldAdaptiveCardExtension = /** @class */ (function (_super) {\r\n    __extends(HelloWorldAdaptiveCardExtension, _super);\r\n    function HelloWorldAdaptiveCardExtension() {\r\n        return _super !== null && _super.apply(this, arguments) || this;\r\n    }\r\n    HelloWorldAdaptiveCardExtension.prototype.onInit = function () {\r\n        return __awaiter(this, void 0, void 0, function () {\r\n            return __generator(this, function (_a) {\r\n                switch (_a.label) {\r\n                    case 0:\r\n                        this.state = {\r\n                            description: this.properties.description,\r\n                            unreadCount: null\r\n                        };\r\n                        return [4 /*yield*/, this.getUnreadCount()];\r\n                    case 1:\r\n                        _a.sent();\r\n                        this.cardNavigator.register(CARD_VIEW_REGISTRY_ID, function () { return new CardView(); });\r\n                        this.quickViewNavigator.register(QUICK_VIEW_REGISTRY_ID, function () { return new QuickView(); });\r\n                        return [2 /*return*/, Promise.resolve()];\r\n                }\r\n            });\r\n        });\r\n    };\r\n    HelloWorldAdaptiveCardExtension.prototype.getUnreadCount = function () {\r\n        return __awaiter(this, void 0, void 0, function () {\r\n            var graphClient, error_1;\r\n            var _this = this;\r\n            return __generator(this, function (_a) {\r\n                switch (_a.label) {\r\n                    case 0: return [4 /*yield*/, this.context.msGraphClientFactory.getClient()];\r\n                    case 1:\r\n                        graphClient = _a.sent();\r\n                        _a.label = 2;\r\n                    case 2:\r\n                        _a.trys.push([2, 4, , 5]);\r\n                        return [4 /*yield*/, graphClient\r\n                                .api('/me/messages')\r\n                                .version('v1.0')\r\n                                .filter('isRead ne true&$count=true&$top=999')\r\n                                .get(function (error, response, rawResponse) {\r\n                                _this.setState({ unreadCount: response.value.length });\r\n                                console.log(\"getUnreadCount RESPONSE\", response);\r\n                            })];\r\n                    case 3:\r\n                        _a.sent();\r\n                        return [3 /*break*/, 5];\r\n                    case 4:\r\n                        error_1 = _a.sent();\r\n                        console.log(error_1);\r\n                        return [3 /*break*/, 5];\r\n                    case 5: return [2 /*return*/];\r\n                }\r\n            });\r\n        });\r\n    };\r\n    Object.defineProperty(HelloWorldAdaptiveCardExtension.prototype, \"title\", {\r\n        get: function () {\r\n            return this.properties.title;\r\n        },\r\n        enumerable: true,\r\n        configurable: true\r\n    });\r\n    Object.defineProperty(HelloWorldAdaptiveCardExtension.prototype, \"iconProperty\", {\r\n        get: function () {\r\n            return this.properties.iconProperty || require('./assets/SharePointLogo.svg');\r\n        },\r\n        enumerable: true,\r\n        configurable: true\r\n    });\r\n    HelloWorldAdaptiveCardExtension.prototype.loadPropertyPaneResources = function () {\r\n        var _this = this;\r\n        return import(\r\n        /* webpackChunkName: 'HelloWorld-property-pane'*/\r\n        './HelloWorldPropertyPane')\r\n            .then(function (component) {\r\n            _this._deferredPropertyPane = new component.HelloWorldPropertyPane();\r\n        });\r\n    };\r\n    HelloWorldAdaptiveCardExtension.prototype.renderCard = function () {\r\n        return CARD_VIEW_REGISTRY_ID;\r\n    };\r\n    HelloWorldAdaptiveCardExtension.prototype.getPropertyPaneConfiguration = function () {\r\n        return this._deferredPropertyPane.getPropertyPaneConfiguration();\r\n    };\r\n    return HelloWorldAdaptiveCardExtension;\r\n}(BaseAdaptiveCardExtension));\r\nexport default HelloWorldAdaptiveCardExtension;\r\n//# sourceMappingURL=HelloWorldAdaptiveCardExtension.js.map"
         },
         {
           "id": null,
@@ -1016,7 +1016,7 @@
               "moduleName": "./lib/adaptiveCardExtensions/helloWorld/HelloWorldAdaptiveCardExtension.js",
               "type": "harmony import specifier",
               "userRequest": "./cardView/CardView",
-              "loc": "78:100-108"
+              "loc": "72:100-108"
             }
           ],
           "usedExports": [
@@ -1072,7 +1072,7 @@
               "moduleName": "./lib/adaptiveCardExtensions/helloWorld/HelloWorldAdaptiveCardExtension.js",
               "type": "harmony import specifier",
               "userRequest": "./quickView/QuickView",
-              "loc": "79:106-115"
+              "loc": "73:106-115"
             }
           ],
           "usedExports": [
@@ -1226,7 +1226,7 @@
           "moduleName": "./lib/adaptiveCardExtensions/helloWorld/HelloWorldAdaptiveCardExtension.js + 2 modules",
           "type": "harmony import specifier",
           "userRequest": "@microsoft/sp-adaptive-card-extension-base",
-          "loc": "147:2-27"
+          "loc": "141:2-27"
         }
       ],
       "usedExports": [

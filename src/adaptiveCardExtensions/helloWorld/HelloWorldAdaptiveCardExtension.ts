@@ -35,13 +35,6 @@ export default class HelloWorldAdaptiveCardExtension extends BaseAdaptiveCardExt
 
     await this.getUnreadCount();
 
-    // this.context.msGraphClientFactory .getClient() .then((client): void => {
-    //   //if you want to apply some filter or order by
-    //   let  response:any=client.api("/me/messages").filter('isRead eq false').get();
-    //   //Now you can access the value of response by response.value
-    //   console.log(response);
-    //   });
-
     this.cardNavigator.register(CARD_VIEW_REGISTRY_ID, () => new CardView());
     this.quickViewNavigator.register(QUICK_VIEW_REGISTRY_ID, () => new QuickView());
 
@@ -54,7 +47,7 @@ export default class HelloWorldAdaptiveCardExtension extends BaseAdaptiveCardExt
       await graphClient
         .api('/me/messages')
         .version('v1.0')
-        .filter('isRead eq false&count=true')
+        .filter('isRead ne true&$count=true&$top=999')
         .get((error: GraphError, response: any, rawResponse?: any): void => {
             this.setState({unreadCount: response.value.length});
             console.log("getUnreadCount RESPONSE", response);
