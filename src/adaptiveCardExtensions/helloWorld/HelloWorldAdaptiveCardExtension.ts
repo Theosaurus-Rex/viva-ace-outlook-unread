@@ -16,6 +16,7 @@ export interface IHelloWorldAdaptiveCardExtensionProps {
 export interface IHelloWorldAdaptiveCardExtensionState {
   description: string;
   unreadCount: number | null;
+  emails: {subject: string, sender: string}[];
 }
 
 const CARD_VIEW_REGISTRY_ID: string = 'HelloWorld_CARD_VIEW';
@@ -30,10 +31,12 @@ export default class HelloWorldAdaptiveCardExtension extends BaseAdaptiveCardExt
   public async onInit(): Promise<void> {
     this.state = {
       description: this.properties.description,
-      unreadCount: null
+      unreadCount: null,
+      emails: []
     };
 
     await this.getUnreadCount();
+    await this.getEmailDetails();
 
     this.cardNavigator.register(CARD_VIEW_REGISTRY_ID, () => new CardView());
     this.quickViewNavigator.register(QUICK_VIEW_REGISTRY_ID, () => new QuickView());
@@ -49,9 +52,34 @@ export default class HelloWorldAdaptiveCardExtension extends BaseAdaptiveCardExt
         .version('v1.0')
         .filter('isRead ne true&$count=true&$top=999')
         .get((error: GraphError, response: any, rawResponse?: any): void => {
+
             this.setState({unreadCount: response.value.length});
             console.log("getUnreadCount RESPONSE", response);
           });
+      
+    } catch (error) {
+      console.log(error);
+    } 
+  }
+
+  private async getEmailDetails() {
+    const graphClient = await this.context.msGraphClientFactory.getClient();
+    try {
+      await graphClient
+        .api('/me/messages')
+        .version('v1.0')
+        .filter('isRead ne true&$count=true&$top=999')
+        .get((error: GraphError, response: any, rawResponse?: any): void => {
+            response.value.forEach(email => {
+              this.state.emails.push(
+                {
+                  subject: email.subject,
+                  sender: email.sender.emailAddress.name
+                }
+              );
+            });
+          });
+          console.log(this.state.emails);
       
     } catch (error) {
       console.log(error);
