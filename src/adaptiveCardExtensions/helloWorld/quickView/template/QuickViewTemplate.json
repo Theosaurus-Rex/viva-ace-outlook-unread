@@ -4,13 +4,19 @@
   "version": "1.2",
   "body": [
     {
-      "type": "FactSet",
-      "weight": "Bolder",
-      "facts": [
+      "type": "Container",
+      "$data": "${emails}",
+      "items": [
         {
-          "$data": "${emails}",
-          "key": "${sender}",
-          "value": "${subject}"
+          "type": "TextBlock",
+          "text": "${sender}:",
+          "weight": "bolder",
+          "size": "medium"
+        },
+        {
+          "type": "TextBlock",
+          "text": "${subject}",
+          "wrap": true
         }
       ]
     }

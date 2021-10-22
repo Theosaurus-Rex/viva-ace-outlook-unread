@@ -16,7 +16,7 @@ export interface IHelloWorldAdaptiveCardExtensionProps {
 export interface IHelloWorldAdaptiveCardExtensionState {
   description: string;
   unreadCount: number | null;
-  emails: {subject: string, sender: string}[];
+  emails: {id: string, subject: string, sender: string}[];
 }
 
 const CARD_VIEW_REGISTRY_ID: string = 'HelloWorld_CARD_VIEW';
@@ -73,6 +73,7 @@ export default class HelloWorldAdaptiveCardExtension extends BaseAdaptiveCardExt
             response.value.forEach(email => {
               this.state.emails.push(
                 {
+                  id: email.id,
                   subject: email.subject,
                   sender: email.sender.emailAddress.name
                 }
