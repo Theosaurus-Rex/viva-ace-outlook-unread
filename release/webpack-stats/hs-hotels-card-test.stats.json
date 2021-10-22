@@ -2,9 +2,9 @@
   "errors": [],
   "warnings": [],
   "version": "4.44.2",
-  "hash": "fab4e95d56c41ab3b362",
-  "time": 38521,
-  "builtAt": 1634864981619,
+  "hash": "88ec24ee4854a8c24744",
+  "time": 67,
+  "builtAt": 1634871755324,
   "publicPath": "",
   "outputPath": "C:\\Users\\TheoHarrisE²\\Desktop\\code\\hs-hotels-card-test\\dist",
   "assetsByChunkName": {
@@ -20,15 +20,7 @@
   "assets": [
     {
       "name": "717e8239-32cd-4afc-af51-216d2d1dfc41.manifest.json",
-      "size": 1440,
-      "chunks": [],
-      "chunkNames": [],
-      "info": {},
-      "emitted": true
-    },
-    {
-      "name": "HelloWorldAdaptiveCardExtensionStrings_en-us.js",
-      "size": 497,
+      "size": 1291,
       "chunks": [],
       "chunkNames": [],
       "info": {},
@@ -70,7 +62,7 @@
     },
     {
       "name": "hello-world-adaptive-card-extension.js",
-      "size": 29337,
+      "size": 28158,
       "chunks": [
         "hello-world-adaptive-card-extension"
       ],
@@ -82,7 +74,7 @@
     },
     {
       "name": "hello-world-adaptive-card-extension.js.map",
-      "size": 20310,
+      "size": 19988,
       "chunks": [
         "hello-world-adaptive-card-extension"
       ],
@@ -159,8 +151,8 @@
           "id": "09z0",
           "identifier": "C:\\Users\\TheoHarrisE²\\Desktop\\code\\hs-hotels-card-test\\node_modules\\source-map-loader\\index.js!C:\\Users\\TheoHarrisE²\\Desktop\\code\\hs-hotels-card-test\\lib\\adaptiveCardExtensions\\helloWorld\\HelloWorldPropertyPane.js",
           "name": "./lib/adaptiveCardExtensions/helloWorld/HelloWorldPropertyPane.js",
-          "index": 7,
-          "index2": 7,
+          "index": 6,
+          "index2": 6,
           "size": 330,
           "cacheable": true,
           "built": true,
@@ -220,7 +212,7 @@
       "rendered": true,
       "initial": true,
       "entry": true,
-      "size": 14354,
+      "size": 13842,
       "names": [
         "hello-world-adaptive-card-extension"
       ],
@@ -228,7 +220,7 @@
         "hello-world-adaptive-card-extension.js",
         "hello-world-adaptive-card-extension.js.map"
       ],
-      "hash": "fa6afe51937e2e9433cb",
+      "hash": "0ff47dd31cfe22fa4477",
       "siblings": [],
       "parents": [],
       "children": [
@@ -237,76 +229,11 @@
       "childrenByOrder": {},
       "modules": [
         {
-          "id": "26Hm",
-          "identifier": "external \"HelloWorldAdaptiveCardExtensionStrings\"",
-          "name": "external \"HelloWorldAdaptiveCardExtensionStrings\"",
-          "index": 4,
-          "index2": 2,
-          "size": 42,
-          "built": true,
-          "optional": false,
-          "prefetched": false,
-          "chunks": [
-            "hello-world-adaptive-card-extension"
-          ],
-          "issuer": "C:\\Users\\TheoHarrisE²\\Desktop\\code\\hs-hotels-card-test\\node_modules\\source-map-loader\\index.js!C:\\Users\\TheoHarrisE²\\Desktop\\code\\hs-hotels-card-test\\lib\\adaptiveCardExtensions\\helloWorld\\quickView\\QuickView.js",
-          "issuerId": "r39S",
-          "issuerName": "./lib/adaptiveCardExtensions/helloWorld/quickView/QuickView.js",
-          "issuerPath": [
-            {
-              "id": "T4Pj",
-              "identifier": "C:\\Users\\TheoHarrisE²\\Desktop\\code\\hs-hotels-card-test\\node_modules\\source-map-loader\\index.js!C:\\Users\\TheoHarrisE²\\Desktop\\code\\hs-hotels-card-test\\lib\\adaptiveCardExtensions\\helloWorld\\HelloWorldAdaptiveCardExtension.js",
-              "name": "./lib/adaptiveCardExtensions/helloWorld/HelloWorldAdaptiveCardExtension.js"
-            },
-            {
-              "id": "r39S",
-              "identifier": "C:\\Users\\TheoHarrisE²\\Desktop\\code\\hs-hotels-card-test\\node_modules\\source-map-loader\\index.js!C:\\Users\\TheoHarrisE²\\Desktop\\code\\hs-hotels-card-test\\lib\\adaptiveCardExtensions\\helloWorld\\quickView\\QuickView.js",
-              "name": "./lib/adaptiveCardExtensions/helloWorld/quickView/QuickView.js"
-            }
-          ],
-          "failed": false,
-          "errors": 0,
-          "warnings": 0,
-          "assets": [],
-          "reasons": [
-            {
-              "moduleId": "r39S",
-              "moduleIdentifier": "C:\\Users\\TheoHarrisE²\\Desktop\\code\\hs-hotels-card-test\\node_modules\\source-map-loader\\index.js!C:\\Users\\TheoHarrisE²\\Desktop\\code\\hs-hotels-card-test\\lib\\adaptiveCardExtensions\\helloWorld\\quickView\\QuickView.js",
-              "module": "./lib/adaptiveCardExtensions/helloWorld/quickView/QuickView.js",
-              "moduleName": "./lib/adaptiveCardExtensions/helloWorld/quickView/QuickView.js",
-              "type": "harmony side effect evaluation",
-              "userRequest": "HelloWorldAdaptiveCardExtensionStrings",
-              "loc": "15:0-66"
-            },
-            {
-              "moduleId": "r39S",
-              "moduleIdentifier": "C:\\Users\\TheoHarrisE²\\Desktop\\code\\hs-hotels-card-test\\node_modules\\source-map-loader\\index.js!C:\\Users\\TheoHarrisE²\\Desktop\\code\\hs-hotels-card-test\\lib\\adaptiveCardExtensions\\helloWorld\\quickView\\QuickView.js",
-              "module": "./lib/adaptiveCardExtensions/helloWorld/quickView/QuickView.js",
-              "moduleName": "./lib/adaptiveCardExtensions/helloWorld/quickView/QuickView.js",
-              "type": "harmony import specifier",
-              "userRequest": "HelloWorldAdaptiveCardExtensionStrings",
-              "loc": "24:26-42"
-            },
-            {
-              "moduleId": "r39S",
-              "moduleIdentifier": "C:\\Users\\TheoHarrisE²\\Desktop\\code\\hs-hotels-card-test\\node_modules\\source-map-loader\\index.js!C:\\Users\\TheoHarrisE²\\Desktop\\code\\hs-hotels-card-test\\lib\\adaptiveCardExtensions\\helloWorld\\quickView\\QuickView.js",
-              "module": "./lib/adaptiveCardExtensions/helloWorld/quickView/QuickView.js",
-              "moduleName": "./lib/adaptiveCardExtensions/helloWorld/quickView/QuickView.js",
-              "type": "harmony import specifier",
-              "userRequest": "HelloWorldAdaptiveCardExtensionStrings",
-              "loc": "25:23-36"
-            }
-          ],
-          "providedExports": null,
-          "optimizationBailout": [],
-          "depth": 2
-        },
-        {
           "id": "5nUA",
           "identifier": "C:\\Users\\TheoHarrisE²\\Desktop\\code\\hs-hotels-card-test\\node_modules\\file-loader\\dist\\cjs.js??ref--7-0!C:\\Users\\TheoHarrisE²\\Desktop\\code\\hs-hotels-card-test\\lib\\adaptiveCardExtensions\\helloWorld\\assets\\SharePointLogo.svg",
           "name": "./lib/adaptiveCardExtensions/helloWorld/assets/SharePointLogo.svg",
-          "index": 6,
-          "index2": 5,
+          "index": 5,
+          "index2": 4,
           "size": 97,
           "cacheable": true,
           "built": true,
@@ -407,7 +334,7 @@
           "identifier": "C:\\Users\\TheoHarrisE²\\Desktop\\code\\hs-hotels-card-test\\node_modules\\source-map-loader\\index.js!C:\\Users\\TheoHarrisE²\\Desktop\\code\\hs-hotels-card-test\\lib\\adaptiveCardExtensions\\helloWorld\\HelloWorldAdaptiveCardExtension.js",
           "name": "./lib/adaptiveCardExtensions/helloWorld/HelloWorldAdaptiveCardExtension.js",
           "index": 0,
-          "index2": 6,
+          "index2": 5,
           "size": 9396,
           "cacheable": true,
           "built": true,
@@ -474,9 +401,9 @@
           "id": "YBiG",
           "identifier": "C:\\Users\\TheoHarrisE²\\Desktop\\code\\hs-hotels-card-test\\lib\\adaptiveCardExtensions\\helloWorld\\quickView\\template\\QuickViewTemplate.json",
           "name": "./lib/adaptiveCardExtensions/helloWorld/quickView/template/QuickViewTemplate.json",
-          "index": 5,
-          "index2": 3,
-          "size": 653,
+          "index": 4,
+          "index2": 2,
+          "size": 350,
           "cacheable": true,
           "built": true,
           "optional": false,
@@ -511,7 +438,7 @@
               "moduleName": "./lib/adaptiveCardExtensions/helloWorld/quickView/QuickView.js",
               "type": "cjs require",
               "userRequest": "./template/QuickViewTemplate.json",
-              "loc": "34:19-63"
+              "loc": "31:19-63"
             }
           ],
           "providedExports": [
@@ -523,7 +450,7 @@
           ],
           "optimizationBailout": [],
           "depth": 2,
-          "source": "{\r\n  \"schema\": \"http://adaptivecards.io/schemas/adaptive-card.json\",\r\n  \"type\": \"AdaptiveCard\",\r\n  \"version\": \"1.2\",\r\n  \"body\": [\r\n    {\r\n      \"type\": \"TextBlock\",\r\n      \"weight\": \"Bolder\",\r\n      \"text\": \"${title}\"\r\n    },\r\n    {\r\n      \"type\": \"ColumnSet\",\r\n      \"columns\": [\r\n        {\r\n          \"type\": \"Column\",\r\n          \"items\": [\r\n            {\r\n              \"type\": \"TextBlock\",\r\n              \"weight\": \"Bolder\",\r\n              \"text\": \"${subTitle}\",\r\n              \"wrap\": true\r\n            }\r\n          ]\r\n        }\r\n      ]\r\n    },\r\n    {\r\n      \"type\": \"TextBlock\",\r\n      \"text\": \"${description}\",\r\n      \"wrap\": true\r\n    }\r\n  ]\r\n}"
+          "source": "{\r\n  \"schema\": \"http://adaptivecards.io/schemas/adaptive-card.json\",\r\n  \"type\": \"AdaptiveCard\",\r\n  \"version\": \"1.2\",\r\n  \"body\": [\r\n    {\r\n      \"type\": \"FactSet\",\r\n      \"weight\": \"Bolder\",\r\n      \"facts\": [\r\n        {\r\n          \"$data\": \"${emails}\",\r\n          \"key\": \"${sender}\",\r\n          \"value\": \"${subject}\"\r\n        }\r\n      ]\r\n    }\r\n  ]\r\n}"
         },
         {
           "id": "lz/E",
@@ -605,7 +532,7 @@
               "moduleName": "./lib/adaptiveCardExtensions/helloWorld/quickView/QuickView.js",
               "type": "harmony import specifier",
               "userRequest": "@microsoft/sp-adaptive-card-extension-base",
-              "loc": "40:2-22"
+              "loc": "37:2-22"
             }
           ],
           "providedExports": null,
@@ -617,8 +544,8 @@
           "identifier": "C:\\Users\\TheoHarrisE²\\Desktop\\code\\hs-hotels-card-test\\node_modules\\source-map-loader\\index.js!C:\\Users\\TheoHarrisE²\\Desktop\\code\\hs-hotels-card-test\\lib\\adaptiveCardExtensions\\helloWorld\\quickView\\QuickView.js",
           "name": "./lib/adaptiveCardExtensions/helloWorld/quickView/QuickView.js",
           "index": 3,
-          "index2": 4,
-          "size": 1594,
+          "index2": 3,
+          "size": 1427,
           "cacheable": true,
           "built": true,
           "optional": false,
@@ -665,7 +592,7 @@
           ],
           "optimizationBailout": [],
           "depth": 1,
-          "source": "var __extends = (this && this.__extends) || (function () {\r\n    var extendStatics = function (d, b) {\r\n        extendStatics = Object.setPrototypeOf ||\r\n            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||\r\n            function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };\r\n        return extendStatics(d, b);\r\n    };\r\n    return function (d, b) {\r\n        extendStatics(d, b);\r\n        function __() { this.constructor = d; }\r\n        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());\r\n    };\r\n})();\r\nimport { BaseAdaptiveCardView } from '@microsoft/sp-adaptive-card-extension-base';\r\nimport * as strings from 'HelloWorldAdaptiveCardExtensionStrings';\r\nvar QuickView = /** @class */ (function (_super) {\r\n    __extends(QuickView, _super);\r\n    function QuickView() {\r\n        return _super !== null && _super.apply(this, arguments) || this;\r\n    }\r\n    Object.defineProperty(QuickView.prototype, \"data\", {\r\n        get: function () {\r\n            return {\r\n                subTitle: strings.SubTitle,\r\n                title: strings.Title,\r\n                description: this.properties.description\r\n            };\r\n        },\r\n        enumerable: true,\r\n        configurable: true\r\n    });\r\n    Object.defineProperty(QuickView.prototype, \"template\", {\r\n        get: function () {\r\n            return require('./template/QuickViewTemplate.json');\r\n        },\r\n        enumerable: true,\r\n        configurable: true\r\n    });\r\n    return QuickView;\r\n}(BaseAdaptiveCardView));\r\nexport { QuickView };\r\n"
+          "source": "var __extends = (this && this.__extends) || (function () {\r\n    var extendStatics = function (d, b) {\r\n        extendStatics = Object.setPrototypeOf ||\r\n            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||\r\n            function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };\r\n        return extendStatics(d, b);\r\n    };\r\n    return function (d, b) {\r\n        extendStatics(d, b);\r\n        function __() { this.constructor = d; }\r\n        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());\r\n    };\r\n})();\r\nimport { BaseAdaptiveCardView } from '@microsoft/sp-adaptive-card-extension-base';\r\nvar QuickView = /** @class */ (function (_super) {\r\n    __extends(QuickView, _super);\r\n    function QuickView() {\r\n        return _super !== null && _super.apply(this, arguments) || this;\r\n    }\r\n    Object.defineProperty(QuickView.prototype, \"data\", {\r\n        get: function () {\r\n            return {\r\n                emails: this.state.emails\r\n            };\r\n        },\r\n        enumerable: true,\r\n        configurable: true\r\n    });\r\n    Object.defineProperty(QuickView.prototype, \"template\", {\r\n        get: function () {\r\n            return require('./template/QuickViewTemplate.json');\r\n        },\r\n        enumerable: true,\r\n        configurable: true\r\n    });\r\n    return QuickView;\r\n}(BaseAdaptiveCardView));\r\nexport { QuickView };\r\n"
         }
       ],
       "filteredModules": 0,
@@ -686,8 +613,8 @@
       "id": "09z0",
       "identifier": "C:\\Users\\TheoHarrisE²\\Desktop\\code\\hs-hotels-card-test\\node_modules\\source-map-loader\\index.js!C:\\Users\\TheoHarrisE²\\Desktop\\code\\hs-hotels-card-test\\lib\\adaptiveCardExtensions\\helloWorld\\HelloWorldPropertyPane.js",
       "name": "./lib/adaptiveCardExtensions/helloWorld/HelloWorldPropertyPane.js",
-      "index": 7,
-      "index2": 7,
+      "index": 6,
+      "index2": 6,
       "size": 330,
       "cacheable": true,
       "built": true,
@@ -729,76 +656,11 @@
       "source": "var HelloWorldPropertyPane = /** @class */ (function () {\r\n    function HelloWorldPropertyPane() {\r\n    }\r\n    HelloWorldPropertyPane.prototype.getPropertyPaneConfiguration = function () {\r\n        return {\r\n            pages: []\r\n        };\r\n    };\r\n    return HelloWorldPropertyPane;\r\n}());\r\nexport { HelloWorldPropertyPane };\r\n"
     },
     {
-      "id": "26Hm",
-      "identifier": "external \"HelloWorldAdaptiveCardExtensionStrings\"",
-      "name": "external \"HelloWorldAdaptiveCardExtensionStrings\"",
-      "index": 4,
-      "index2": 2,
-      "size": 42,
-      "built": true,
-      "optional": false,
-      "prefetched": false,
-      "chunks": [
-        "hello-world-adaptive-card-extension"
-      ],
-      "issuer": "C:\\Users\\TheoHarrisE²\\Desktop\\code\\hs-hotels-card-test\\node_modules\\source-map-loader\\index.js!C:\\Users\\TheoHarrisE²\\Desktop\\code\\hs-hotels-card-test\\lib\\adaptiveCardExtensions\\helloWorld\\quickView\\QuickView.js",
-      "issuerId": "r39S",
-      "issuerName": "./lib/adaptiveCardExtensions/helloWorld/quickView/QuickView.js",
-      "issuerPath": [
-        {
-          "id": "T4Pj",
-          "identifier": "C:\\Users\\TheoHarrisE²\\Desktop\\code\\hs-hotels-card-test\\node_modules\\source-map-loader\\index.js!C:\\Users\\TheoHarrisE²\\Desktop\\code\\hs-hotels-card-test\\lib\\adaptiveCardExtensions\\helloWorld\\HelloWorldAdaptiveCardExtension.js",
-          "name": "./lib/adaptiveCardExtensions/helloWorld/HelloWorldAdaptiveCardExtension.js"
-        },
-        {
-          "id": "r39S",
-          "identifier": "C:\\Users\\TheoHarrisE²\\Desktop\\code\\hs-hotels-card-test\\node_modules\\source-map-loader\\index.js!C:\\Users\\TheoHarrisE²\\Desktop\\code\\hs-hotels-card-test\\lib\\adaptiveCardExtensions\\helloWorld\\quickView\\QuickView.js",
-          "name": "./lib/adaptiveCardExtensions/helloWorld/quickView/QuickView.js"
-        }
-      ],
-      "failed": false,
-      "errors": 0,
-      "warnings": 0,
-      "assets": [],
-      "reasons": [
-        {
-          "moduleId": "r39S",
-          "moduleIdentifier": "C:\\Users\\TheoHarrisE²\\Desktop\\code\\hs-hotels-card-test\\node_modules\\source-map-loader\\index.js!C:\\Users\\TheoHarrisE²\\Desktop\\code\\hs-hotels-card-test\\lib\\adaptiveCardExtensions\\helloWorld\\quickView\\QuickView.js",
-          "module": "./lib/adaptiveCardExtensions/helloWorld/quickView/QuickView.js",
-          "moduleName": "./lib/adaptiveCardExtensions/helloWorld/quickView/QuickView.js",
-          "type": "harmony side effect evaluation",
-          "userRequest": "HelloWorldAdaptiveCardExtensionStrings",
-          "loc": "15:0-66"
-        },
-        {
-          "moduleId": "r39S",
-          "moduleIdentifier": "C:\\Users\\TheoHarrisE²\\Desktop\\code\\hs-hotels-card-test\\node_modules\\source-map-loader\\index.js!C:\\Users\\TheoHarrisE²\\Desktop\\code\\hs-hotels-card-test\\lib\\adaptiveCardExtensions\\helloWorld\\quickView\\QuickView.js",
-          "module": "./lib/adaptiveCardExtensions/helloWorld/quickView/QuickView.js",
-          "moduleName": "./lib/adaptiveCardExtensions/helloWorld/quickView/QuickView.js",
-          "type": "harmony import specifier",
-          "userRequest": "HelloWorldAdaptiveCardExtensionStrings",
-          "loc": "24:26-42"
-        },
-        {
-          "moduleId": "r39S",
-          "moduleIdentifier": "C:\\Users\\TheoHarrisE²\\Desktop\\code\\hs-hotels-card-test\\node_modules\\source-map-loader\\index.js!C:\\Users\\TheoHarrisE²\\Desktop\\code\\hs-hotels-card-test\\lib\\adaptiveCardExtensions\\helloWorld\\quickView\\QuickView.js",
-          "module": "./lib/adaptiveCardExtensions/helloWorld/quickView/QuickView.js",
-          "moduleName": "./lib/adaptiveCardExtensions/helloWorld/quickView/QuickView.js",
-          "type": "harmony import specifier",
-          "userRequest": "HelloWorldAdaptiveCardExtensionStrings",
-          "loc": "25:23-36"
-        }
-      ],
-      "providedExports": null,
-      "optimizationBailout": [],
-      "depth": 2
-    },
-    {
       "id": "5nUA",
       "identifier": "C:\\Users\\TheoHarrisE²\\Desktop\\code\\hs-hotels-card-test\\node_modules\\file-loader\\dist\\cjs.js??ref--7-0!C:\\Users\\TheoHarrisE²\\Desktop\\code\\hs-hotels-card-test\\lib\\adaptiveCardExtensions\\helloWorld\\assets\\SharePointLogo.svg",
       "name": "./lib/adaptiveCardExtensions/helloWorld/assets/SharePointLogo.svg",
-      "index": 6,
-      "index2": 5,
+      "index": 5,
+      "index2": 4,
       "size": 97,
       "cacheable": true,
       "built": true,
@@ -923,7 +785,7 @@
       "identifier": "C:\\Users\\TheoHarrisE²\\Desktop\\code\\hs-hotels-card-test\\node_modules\\source-map-loader\\index.js!C:\\Users\\TheoHarrisE²\\Desktop\\code\\hs-hotels-card-test\\lib\\adaptiveCardExtensions\\helloWorld\\HelloWorldAdaptiveCardExtension.js",
       "name": "./lib/adaptiveCardExtensions/helloWorld/HelloWorldAdaptiveCardExtension.js",
       "index": 0,
-      "index2": 6,
+      "index2": 5,
       "size": 9396,
       "cacheable": true,
       "built": true,
@@ -990,9 +852,9 @@
       "id": "YBiG",
       "identifier": "C:\\Users\\TheoHarrisE²\\Desktop\\code\\hs-hotels-card-test\\lib\\adaptiveCardExtensions\\helloWorld\\quickView\\template\\QuickViewTemplate.json",
       "name": "./lib/adaptiveCardExtensions/helloWorld/quickView/template/QuickViewTemplate.json",
-      "index": 5,
-      "index2": 3,
-      "size": 653,
+      "index": 4,
+      "index2": 2,
+      "size": 350,
       "cacheable": true,
       "built": true,
       "optional": false,
@@ -1027,7 +889,7 @@
           "moduleName": "./lib/adaptiveCardExtensions/helloWorld/quickView/QuickView.js",
           "type": "cjs require",
           "userRequest": "./template/QuickViewTemplate.json",
-          "loc": "34:19-63"
+          "loc": "31:19-63"
         }
       ],
       "providedExports": [
@@ -1039,7 +901,7 @@
       ],
       "optimizationBailout": [],
       "depth": 2,
-      "source": "{\r\n  \"schema\": \"http://adaptivecards.io/schemas/adaptive-card.json\",\r\n  \"type\": \"AdaptiveCard\",\r\n  \"version\": \"1.2\",\r\n  \"body\": [\r\n    {\r\n      \"type\": \"TextBlock\",\r\n      \"weight\": \"Bolder\",\r\n      \"text\": \"${title}\"\r\n    },\r\n    {\r\n      \"type\": \"ColumnSet\",\r\n      \"columns\": [\r\n        {\r\n          \"type\": \"Column\",\r\n          \"items\": [\r\n            {\r\n              \"type\": \"TextBlock\",\r\n              \"weight\": \"Bolder\",\r\n              \"text\": \"${subTitle}\",\r\n              \"wrap\": true\r\n            }\r\n          ]\r\n        }\r\n      ]\r\n    },\r\n    {\r\n      \"type\": \"TextBlock\",\r\n      \"text\": \"${description}\",\r\n      \"wrap\": true\r\n    }\r\n  ]\r\n}"
+      "source": "{\r\n  \"schema\": \"http://adaptivecards.io/schemas/adaptive-card.json\",\r\n  \"type\": \"AdaptiveCard\",\r\n  \"version\": \"1.2\",\r\n  \"body\": [\r\n    {\r\n      \"type\": \"FactSet\",\r\n      \"weight\": \"Bolder\",\r\n      \"facts\": [\r\n        {\r\n          \"$data\": \"${emails}\",\r\n          \"key\": \"${sender}\",\r\n          \"value\": \"${subject}\"\r\n        }\r\n      ]\r\n    }\r\n  ]\r\n}"
     },
     {
       "id": "lz/E",
@@ -1121,7 +983,7 @@
           "moduleName": "./lib/adaptiveCardExtensions/helloWorld/quickView/QuickView.js",
           "type": "harmony import specifier",
           "userRequest": "@microsoft/sp-adaptive-card-extension-base",
-          "loc": "40:2-22"
+          "loc": "37:2-22"
         }
       ],
       "providedExports": null,
@@ -1133,8 +995,8 @@
       "identifier": "C:\\Users\\TheoHarrisE²\\Desktop\\code\\hs-hotels-card-test\\node_modules\\source-map-loader\\index.js!C:\\Users\\TheoHarrisE²\\Desktop\\code\\hs-hotels-card-test\\lib\\adaptiveCardExtensions\\helloWorld\\quickView\\QuickView.js",
       "name": "./lib/adaptiveCardExtensions/helloWorld/quickView/QuickView.js",
       "index": 3,
-      "index2": 4,
-      "size": 1594,
+      "index2": 3,
+      "size": 1427,
       "cacheable": true,
       "built": true,
       "optional": false,
@@ -1181,7 +1043,7 @@
       ],
       "optimizationBailout": [],
       "depth": 1,
-      "source": "var __extends = (this && this.__extends) || (function () {\r\n    var extendStatics = function (d, b) {\r\n        extendStatics = Object.setPrototypeOf ||\r\n            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||\r\n            function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };\r\n        return extendStatics(d, b);\r\n    };\r\n    return function (d, b) {\r\n        extendStatics(d, b);\r\n        function __() { this.constructor = d; }\r\n        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());\r\n    };\r\n})();\r\nimport { BaseAdaptiveCardView } from '@microsoft/sp-adaptive-card-extension-base';\r\nimport * as strings from 'HelloWorldAdaptiveCardExtensionStrings';\r\nvar QuickView = /** @class */ (function (_super) {\r\n    __extends(QuickView, _super);\r\n    function QuickView() {\r\n        return _super !== null && _super.apply(this, arguments) || this;\r\n    }\r\n    Object.defineProperty(QuickView.prototype, \"data\", {\r\n        get: function () {\r\n            return {\r\n                subTitle: strings.SubTitle,\r\n                title: strings.Title,\r\n                description: this.properties.description\r\n            };\r\n        },\r\n        enumerable: true,\r\n        configurable: true\r\n    });\r\n    Object.defineProperty(QuickView.prototype, \"template\", {\r\n        get: function () {\r\n            return require('./template/QuickViewTemplate.json');\r\n        },\r\n        enumerable: true,\r\n        configurable: true\r\n    });\r\n    return QuickView;\r\n}(BaseAdaptiveCardView));\r\nexport { QuickView };\r\n"
+      "source": "var __extends = (this && this.__extends) || (function () {\r\n    var extendStatics = function (d, b) {\r\n        extendStatics = Object.setPrototypeOf ||\r\n            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||\r\n            function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };\r\n        return extendStatics(d, b);\r\n    };\r\n    return function (d, b) {\r\n        extendStatics(d, b);\r\n        function __() { this.constructor = d; }\r\n        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());\r\n    };\r\n})();\r\nimport { BaseAdaptiveCardView } from '@microsoft/sp-adaptive-card-extension-base';\r\nvar QuickView = /** @class */ (function (_super) {\r\n    __extends(QuickView, _super);\r\n    function QuickView() {\r\n        return _super !== null && _super.apply(this, arguments) || this;\r\n    }\r\n    Object.defineProperty(QuickView.prototype, \"data\", {\r\n        get: function () {\r\n            return {\r\n                emails: this.state.emails\r\n            };\r\n        },\r\n        enumerable: true,\r\n        configurable: true\r\n    });\r\n    Object.defineProperty(QuickView.prototype, \"template\", {\r\n        get: function () {\r\n            return require('./template/QuickViewTemplate.json');\r\n        },\r\n        enumerable: true,\r\n        configurable: true\r\n    });\r\n    return QuickView;\r\n}(BaseAdaptiveCardView));\r\nexport { QuickView };\r\n"
     }
   ],
   "filteredModules": 0,

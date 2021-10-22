@@ -4,30 +4,15 @@
   "version": "1.2",
   "body": [
     {
-      "type": "TextBlock",
+      "type": "FactSet",
       "weight": "Bolder",
-      "text": "${title}"
-    },
-    {
-      "type": "ColumnSet",
-      "columns": [
+      "facts": [
         {
-          "type": "Column",
-          "items": [
-            {
-              "type": "TextBlock",
-              "weight": "Bolder",
-              "text": "${subTitle}",
-              "wrap": true
-            }
-          ]
+          "$data": "${emails}",
+          "key": "${sender}",
+          "value": "${subject}"
         }
       ]
-    },
-    {
-      "type": "TextBlock",
-      "text": "${description}",
-      "wrap": true
     }
   ]
 }
