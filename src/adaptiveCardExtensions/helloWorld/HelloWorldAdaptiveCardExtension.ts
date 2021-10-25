@@ -30,7 +30,7 @@ export default class HelloWorldAdaptiveCardExtension extends BaseAdaptiveCardExt
   public async onInit(): Promise<void> {
     this.state = {
       description: this.properties.description,
-      unreadCount: null
+      unreadCount: 0
     };
 
     await this.getUnreadCount();
