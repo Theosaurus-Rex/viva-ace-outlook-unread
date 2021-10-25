@@ -18,7 +18,11 @@
           "text": "${subject}",
           "wrap": true
         }
-      ]
+      ],
+      "selectAction": {
+        "type": "Action.OpenUrl",
+        "url": "${webLink}"
+      }
     }
   ]
 }
