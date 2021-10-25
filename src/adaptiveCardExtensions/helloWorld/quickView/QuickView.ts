@@ -3,9 +3,7 @@ import * as strings from 'HelloWorldAdaptiveCardExtensionStrings';
 import { IHelloWorldAdaptiveCardExtensionProps, IHelloWorldAdaptiveCardExtensionState } from '../HelloWorldAdaptiveCardExtension';
 
 export interface IQuickViewData {
-  subTitle: string;
-  title: string;
-  description: string;
+  emails: object[];
 }
 
 export class QuickView extends BaseAdaptiveCardView<
@@ -15,9 +13,7 @@ export class QuickView extends BaseAdaptiveCardView<
 > {
   public get data(): IQuickViewData {
     return {
-      subTitle: strings.SubTitle,
-      title: strings.Title,
-      description: this.properties.description
+      emails: this.state.emails
     };
   }
 

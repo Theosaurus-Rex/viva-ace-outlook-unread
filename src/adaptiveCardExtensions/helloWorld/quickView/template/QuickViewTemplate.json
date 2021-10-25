@@ -4,30 +4,21 @@
   "version": "1.2",
   "body": [
     {
-      "type": "TextBlock",
-      "weight": "Bolder",
-      "text": "${title}"
-    },
-    {
-      "type": "ColumnSet",
-      "columns": [
+      "type": "Container",
+      "$data": "${emails}",
+      "items": [
         {
-          "type": "Column",
-          "items": [
-            {
-              "type": "TextBlock",
-              "weight": "Bolder",
-              "text": "${subTitle}",
-              "wrap": true
-            }
-          ]
+          "type": "TextBlock",
+          "text": "${sender}:",
+          "weight": "bolder",
+          "size": "medium"
+        },
+        {
+          "type": "TextBlock",
+          "text": "${subject}",
+          "wrap": true
         }
       ]
-    },
-    {
-      "type": "TextBlock",
-      "text": "${description}",
-      "wrap": true
     }
   ]
 }
