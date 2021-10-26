@@ -37,11 +37,7 @@
     "scriptResources": {
       "hello-world-adaptive-card-extension": {
         "type": "path",
-        "path": "hello-world-adaptive-card-extension_88d21863ef2fc2999f55.js"
-      },
-      "HelloWorldAdaptiveCardExtensionStrings": {
-        "type": "path",
-        "path": "HelloWorldAdaptiveCardExtensionStrings_en-us_30e3c2906cdf48c15ab8396cde6f4470.js"
+        "path": "hello-world-adaptive-card-extension_65bae68925aa1aeff998.js"
       },
       "@microsoft/sp-adaptive-card-extension-base": {
         "type": "component",
