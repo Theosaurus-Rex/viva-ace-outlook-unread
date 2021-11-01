@@ -4,22 +4,6 @@ import { IHelloWorldAdaptiveCardExtensionProps } from './HelloWorldAdaptiveCardE
 
 export class HelloWorldPropertyPane {
   public getPropertyPaneConfiguration(properties: IHelloWorldAdaptiveCardExtensionProps): IPropertyPaneConfiguration {
-    let senderListOptions = []
-    properties.senderList.forEach(sender =>{
-      senderListOptions.push(
-        {key: sender.senderEmailAddress, text: sender.senderName}
-      )
-    })
-    console.log("SENDER OPTIONS PANE", senderListOptions)
-    let filteredSenderListEmails = []
-   let filteredSenderListOptions = []
-   senderListOptions.forEach(sender => {
-    if (!filteredSenderListEmails.includes(sender.key)){
-      filteredSenderListEmails.push(sender.key);
-      filteredSenderListOptions.push(sender)
-    }
-   })
-   console.log("FILTERED", filteredSenderListEmails)
     return {
       pages: [
         {
@@ -30,9 +14,9 @@ export class HelloWorldPropertyPane {
             {
               groupName: "Card Settings",
               groupFields: [
-                PropertyPaneDropdown('senderEmail', {
+                PropertyPaneDropdown('filterBySenderEmail', {
                   label: 'Filter by Sender',
-                  options: filteredSenderListOptions
+                  options: properties.senderList
                   
                 }),
               ]

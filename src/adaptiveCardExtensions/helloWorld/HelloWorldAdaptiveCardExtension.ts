@@ -4,19 +4,22 @@ import { CardView } from './cardView/CardView';
 import { QuickView } from './quickView/QuickView';
 import { HelloWorldPropertyPane } from './HelloWorldPropertyPane';
 import { GraphError } from "@microsoft/microsoft-graph-client/lib/src";
+import * as strings from 'HelloWorldAdaptiveCardExtensionStrings';
 export interface IHelloWorldAdaptiveCardExtensionProps {
   title: string;
   description: string;
   iconProperty: string;
   unreadCount: number;
-  senderList: {senderName: string, senderEmailAddress: string}[];
+  senderList: {key: string, text: string}[];
+  filterBySenderEmail: string;
 }
 
 export interface IHelloWorldAdaptiveCardExtensionState {
   description: string;
   unreadCount: number | null;
   emails: {webLink: string, subject: string, sender: string, senderEmail: string}[];
-  senderList: {senderName: string, senderEmailAddress: string}[];
+  senderList: {key: string, text: string}[];
+  filterBySenderEmail: string;
 }
 
 const CARD_VIEW_REGISTRY_ID: string = 'HelloWorld_CARD_VIEW';
@@ -34,13 +37,12 @@ export default class HelloWorldAdaptiveCardExtension extends BaseAdaptiveCardExt
       description: this.properties.description,
       unreadCount: 0,
       emails: [],
-      senderList: []
+      senderList: [],
+      filterBySenderEmail: this.properties.filterBySenderEmail
     };
-
     await this.getUnreadCount();
     await this.getEmailDetails();
-
-    
+    await this.getSenderList();
 
     this.cardNavigator.register(CARD_VIEW_REGISTRY_ID, () => new CardView());
     this.quickViewNavigator.register(QUICK_VIEW_REGISTRY_ID, () => new QuickView());
@@ -54,13 +56,10 @@ export default class HelloWorldAdaptiveCardExtension extends BaseAdaptiveCardExt
       await graphClient
         .api('/me/messages')
         .version('v1.0')
-        .filter('isRead ne true&$count=true&$top=999')
+        .filter(`isRead ne true&$count=true&$top=999`)
         .get((error: GraphError, response: any, rawResponse?: any): void => {
-
             this.setState({unreadCount: response.value.length});
-            console.log("getUnreadCount RESPONSE", response);
           });
-      
     } catch (error) {
       console.log(error);
     } 
@@ -72,46 +71,53 @@ export default class HelloWorldAdaptiveCardExtension extends BaseAdaptiveCardExt
       await graphClient
         .api('/me/messages')
         .version('v1.0')
-        .filter('isRead ne true&$count=true&$top=999')
+        .filter(`isRead ne true&$count=true&$top=999`)
         .get((error: GraphError, response: any, rawResponse?: any): void => {
+          console.log("getEmailDetails response value:", response.value)
             response.value.forEach(email => {
-              this.state.emails.push(
-                {
-                  webLink: email.webLink,
-                  subject: email.subject,
-                  sender: email.sender.emailAddress.name,
-                  senderEmail: email.sender.emailAddress.address
-                }
-              );
+              let emails = [...this.state.emails];
+              emails.push({
+                webLink: email.webLink,
+                subject: email.subject,
+                sender: email.sender.emailAddress.name,
+                senderEmail: email.sender.emailAddress.address
+              });
+              this.setState({emails});
             });
-            response.value.forEach(email => {
-              this.state.senderList.push(
-                {
-                  senderName: email.sender.emailAddress.name,
-                  senderEmailAddress: email.sender.emailAddress.address 
-                }
-              )
-            });
+            console.log('this.state.emails after spread syntax:', this.state.emails);
           });
-          console.log("This.state.emails:", this.state.emails);
-          console.log("This.state.senderList:", this.state.senderList)
-      
     } catch (error) {
       console.log(error);
-    } finally {
-      this.state.senderList.forEach(sender => {
-        this.properties.senderList.push(
-          {
-            senderName: sender.senderName,
-            senderEmailAddress: sender.senderEmailAddress
-          }
-        )
-      });
-      console.log("PROPS SENDERS:", this.properties.senderList)
-    }
+    } 
   }
 
-
+  public async getSenderList() {
+    const graphClient = await this.context.msGraphClientFactory.getClient();
+    try {
+      await graphClient
+        .api('/me/messages')
+        .version('v1.0')
+        .filter(`isRead ne true&$count=true&$top=999`)
+        .get((error: GraphError, response: any, rawResponse?: any): void => {
+          console.log("getEmailDetails response value:", response.value)
+          response.value.forEach(email => {
+            let senderList = [...this.state.senderList];
+            senderList.push(
+              {
+                key: email.sender.emailAddress.address,
+                text: email.sender.emailAddress.name 
+              }
+            );
+            this.setState({senderList});
+            this.properties.senderList = this.state.senderList;
+          });
+          console.log('this.state.senderList after spread:', this.state.senderList);
+          console.log('this.props.senderList', this.properties.senderList);
+        });    
+    } catch (error) {
+      console.log(error);
+    }
+  }
 
 
   public get title(): string {
