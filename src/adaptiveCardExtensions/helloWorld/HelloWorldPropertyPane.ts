@@ -17,7 +17,6 @@ export class HelloWorldPropertyPane {
                 PropertyPaneDropdown('filterBySenderEmail', {
                   label: 'Filter by Sender',
                   options: properties.senderList
-                  
                 }),
               ]
             }

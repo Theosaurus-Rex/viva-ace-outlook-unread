@@ -31,11 +31,19 @@ export default class HelloWorldAdaptiveCardExtension extends BaseAdaptiveCardExt
 > {
   private _deferredPropertyPane: HelloWorldPropertyPane;
 
+  public async componentDidUpdate(){
+    console.log("UPDATING");
+    await this.getUnreadCount();
+    await this.getEmailDetails();
+    await this.getSenderList();
+
+    return Promise.resolve();
+  }
+
   public async onInit(): Promise<void> {
-    
     this.state = {
       description: this.properties.description,
-      unreadCount: 0,
+      unreadCount: this.properties.unreadCount || 0,
       emails: [],
       senderList: [],
       filterBySenderEmail: this.properties.filterBySenderEmail
@@ -56,8 +64,9 @@ export default class HelloWorldAdaptiveCardExtension extends BaseAdaptiveCardExt
       await graphClient
         .api('/me/messages')
         .version('v1.0')
-        .filter(`isRead ne true&$count=true&$top=999`)
+        .filter(`(from/emailAddress/address) eq '${this.properties.filterBySenderEmail}'&$isRead ne true&$count=true&$top=999`)
         .get((error: GraphError, response: any, rawResponse?: any): void => {
+          console.log("This.properties.filterBySenderEmail", this.properties.filterBySenderEmail)
             this.setState({unreadCount: response.value.length});
           });
     } catch (error) {
@@ -71,7 +80,7 @@ export default class HelloWorldAdaptiveCardExtension extends BaseAdaptiveCardExt
       await graphClient
         .api('/me/messages')
         .version('v1.0')
-        .filter(`isRead ne true&$count=true&$top=999`)
+        .filter(`(from/emailAddress/address) eq '${this.properties.filterBySenderEmail}'&$isRead ne true&$count=true&$top=999`)
         .get((error: GraphError, response: any, rawResponse?: any): void => {
           console.log("getEmailDetails response value:", response.value)
             response.value.forEach(email => {
