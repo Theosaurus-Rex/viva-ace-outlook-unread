@@ -31,8 +31,7 @@ export default class HelloWorldAdaptiveCardExtension extends BaseAdaptiveCardExt
 > {
   private _deferredPropertyPane: HelloWorldPropertyPane;
 
-  public async componentDidUpdate(){
-    console.log("UPDATING");
+  public async onPropertyPaneFieldChanged() {
     await this.getUnreadCount();
     await this.getEmailDetails();
     await this.getSenderList();
