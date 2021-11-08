@@ -12,11 +12,10 @@ export class HelloWorldPropertyPane {
           },
           groups: [
             {
-              groupName: "Card Settings",
+              groupName: "Filters",
               groupFields: [
-                PropertyPaneDropdown('filterBySenderEmail', {
+                PropertyPaneTextField('filterBySenderEmail', {
                   label: 'Filter by Sender',
-                  options: properties.senderList
                 }),
               ]
             }
