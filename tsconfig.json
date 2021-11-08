@@ -29,6 +29,7 @@
       "ES2017"
     ]
   },
+  "downlevelIteration": true,
   "include": [
     "src/**/*.ts",
     "src/**/*.tsx"

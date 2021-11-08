@@ -1,4 +1,5 @@
 import { IPropertyPaneConfiguration } from '@microsoft/sp-property-pane';
+import {uniqBy} from 'lodash';
 import { BaseAdaptiveCardExtension } from '@microsoft/sp-adaptive-card-extension-base';
 import { CardView } from './cardView/CardView';
 import { QuickView } from './quickView/QuickView';
@@ -99,6 +100,9 @@ export default class HelloWorldAdaptiveCardExtension extends BaseAdaptiveCardExt
     } 
   }
 
+  
+  
+
   public async getSenderList() {
     const graphClient = await this.context.msGraphClientFactory.getClient();
     try {
@@ -116,6 +120,7 @@ export default class HelloWorldAdaptiveCardExtension extends BaseAdaptiveCardExt
                 text: email.sender.emailAddress.name 
               }
             );
+            senderList = uniqBy(senderList, 'key');
             this.setState({senderList});
             this.properties.senderList = this.state.senderList;
           });

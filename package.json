@@ -14,7 +14,8 @@
     "@microsoft/sp-core-library": "1.13.0-beta.15",
     "@microsoft/sp-http": "^1.12.1",
     "@microsoft/sp-property-pane": "1.13.0-beta.15",
-    "axios": "^0.23.0"
+    "axios": "^0.23.0",
+    "lodash": "^4.17.21"
   },
   "devDependencies": {
     "@microsoft/microsoft-graph-types": "^2.7.0",
