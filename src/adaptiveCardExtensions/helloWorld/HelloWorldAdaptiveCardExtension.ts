@@ -61,7 +61,7 @@ export default class HelloWorldAdaptiveCardExtension extends BaseAdaptiveCardExt
     const graphClient = await this.context.msGraphClientFactory.getClient();
     try {
       await graphClient
-        .api('/me/messages')
+        .api('/me/mailfolders/inbox/messages')
         .version('v1.0')
         .filter(`(from/emailAddress/address) eq '${this.properties.filterBySenderEmail}'&$isRead ne true&$count=true&$top=999`)
         .get((error: GraphError, response: any, rawResponse?: any): void => {
@@ -138,7 +138,6 @@ export default class HelloWorldAdaptiveCardExtension extends BaseAdaptiveCardExt
 
   protected loadPropertyPaneResources(): Promise<void> {
     return import(
-      /* webpackChunkName: 'HelloWorld-property-pane'*/
       './HelloWorldPropertyPane'
     )
       .then(
