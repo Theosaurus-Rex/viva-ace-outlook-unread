@@ -11,6 +11,7 @@ export interface IHelloWorldAdaptiveCardExtensionProps {
   unreadCount: number;
   filterBySenderEmail: string;
   filterBySubject: string;
+  appliedFilters: string;
 }
 
 export interface IHelloWorldAdaptiveCardExtensionState {
@@ -19,6 +20,7 @@ export interface IHelloWorldAdaptiveCardExtensionState {
   emails: {webLink: string, subject: string, sender: string, senderEmail: string}[];
   filterBySenderEmail: string;
   filterBySubject: string;
+  appliedFilters: string;
 }
 
 const CARD_VIEW_REGISTRY_ID: string = 'HelloWorld_CARD_VIEW';
@@ -31,10 +33,14 @@ export default class HelloWorldAdaptiveCardExtension extends BaseAdaptiveCardExt
   private _deferredPropertyPane: HelloWorldPropertyPane;
 
   public async onPropertyPaneFieldChanged() {
+    this.setState({appliedFilters: 'isRead ne true&$count=true&$top=999'});
+    this.applySenderFilter();
+    this.applySubjectFilter();
     await this.getUnreadCount();
     await this.getEmailDetails();
 
     return Promise.resolve();
+    
   }
 
   public async onInit(): Promise<void> {
@@ -43,9 +49,12 @@ export default class HelloWorldAdaptiveCardExtension extends BaseAdaptiveCardExt
       unreadCount: this.properties.unreadCount || 0,
       emails: [],
       filterBySenderEmail: this.properties.filterBySenderEmail,
-      filterBySubject: this.properties.filterBySubject
+      filterBySubject: this.properties.filterBySubject,
+      appliedFilters: this.properties.appliedFilters
     };
-
+    this.setState({appliedFilters: 'isRead ne true&$count=true&$top=999'});
+    this.applySenderFilter();
+    this.applySubjectFilter();
     await this.getUnreadCount();
     await this.getEmailDetails();
 
@@ -61,7 +70,7 @@ export default class HelloWorldAdaptiveCardExtension extends BaseAdaptiveCardExt
       await graphClient
         .api('/me/mailfolders/inbox/messages')
         .version('v1.0')
-        .filter(`(from/emailAddress/address) eq '${this.properties.filterBySenderEmail}'&$isRead ne true&$count=true&$top=999`)
+        .filter(this.state.appliedFilters)
         .get((error: GraphError, response: any, rawResponse?: any): void => {
             this.setState({unreadCount: response.value.length});
           });
@@ -70,13 +79,31 @@ export default class HelloWorldAdaptiveCardExtension extends BaseAdaptiveCardExt
     } 
   }
 
+  private applySenderFilter() {
+    
+    if (this.properties.filterBySenderEmail){
+      let prevFilterString = this.state.appliedFilters;
+      this.setState({appliedFilters: `(from/emailAddress/address) eq '${this.properties.filterBySenderEmail}'` + ' AND ' + prevFilterString });
+    } 
+    console.log('applySenderFilter', this.state.appliedFilters);
+  }
+
+
+  private applySubjectFilter() {
+    if (this.properties.filterBySubject){
+      let prevFilterString = this.state.appliedFilters;
+      this.setState({appliedFilters: `contains(subject, '${this.properties.filterBySubject}')` + ' AND ' + prevFilterString });
+    }
+    console.log('applySubjectFilter', this.state.appliedFilters);
+  }
+
   private async getEmailDetails() {
     const graphClient = await this.context.msGraphClientFactory.getClient();
     try {
       await graphClient
         .api('/me/messages')
         .version('v1.0')
-        .filter(`(from/emailAddress/address) eq '${this.properties.filterBySenderEmail}'&$isRead ne true&$count=true&$top=999`)
+        .filter(this.state.appliedFilters)
         .get((error: GraphError, response: any, rawResponse?: any): void => {
           console.log("getEmailDetails response value:", response.value)
             response.value.forEach(email => {
