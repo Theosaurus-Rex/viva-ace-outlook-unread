@@ -17,6 +17,9 @@ export class HelloWorldPropertyPane {
                 PropertyPaneTextField('filterBySenderEmail', {
                   label: 'Filter by Sender',
                 }),
+                PropertyPaneTextField('filterBySubject', {
+                  label: 'Filter by Subject'
+                })
               ]
             }
           ]

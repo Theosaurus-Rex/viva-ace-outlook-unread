@@ -1,5 +1,4 @@
 import { IPropertyPaneConfiguration } from '@microsoft/sp-property-pane';
-import {filter, uniqBy} from 'lodash';
 import { BaseAdaptiveCardExtension } from '@microsoft/sp-adaptive-card-extension-base';
 import { CardView } from './cardView/CardView';
 import { QuickView } from './quickView/QuickView';
@@ -11,6 +10,7 @@ export interface IHelloWorldAdaptiveCardExtensionProps {
   iconProperty: string;
   unreadCount: number;
   filterBySenderEmail: string;
+  filterBySubject: string;
 }
 
 export interface IHelloWorldAdaptiveCardExtensionState {
@@ -18,6 +18,7 @@ export interface IHelloWorldAdaptiveCardExtensionState {
   unreadCount: number | null;
   emails: {webLink: string, subject: string, sender: string, senderEmail: string}[];
   filterBySenderEmail: string;
+  filterBySubject: string;
 }
 
 const CARD_VIEW_REGISTRY_ID: string = 'HelloWorld_CARD_VIEW';
@@ -41,7 +42,8 @@ export default class HelloWorldAdaptiveCardExtension extends BaseAdaptiveCardExt
       description: this.properties.description,
       unreadCount: this.properties.unreadCount || 0,
       emails: [],
-      filterBySenderEmail: this.properties.filterBySenderEmail
+      filterBySenderEmail: this.properties.filterBySenderEmail,
+      filterBySubject: this.properties.filterBySubject
     };
 
     await this.getUnreadCount();
@@ -92,7 +94,6 @@ export default class HelloWorldAdaptiveCardExtension extends BaseAdaptiveCardExt
       console.log(error);
     } 
   }
-  
 
   public get title(): string {
     return this.properties.title;
