@@ -1,0 +1,1128 @@
+{
+  "errors": [],
+  "warnings": [],
+  "version": "4.44.2",
+  "hash": "0f0e533c4fe05e441be6",
+  "time": 349,
+  "builtAt": 1636508828055,
+  "publicPath": "",
+  "outputPath": "/Users/theoharris/Desktop/HSH Outlook Card/dist",
+  "assetsByChunkName": {
+    "hello-world-adaptive-card-extension": [
+      "hello-world-adaptive-card-extension.js",
+      "hello-world-adaptive-card-extension.js.map"
+    ]
+  },
+  "assets": [
+    {
+      "name": "717e8239-32cd-4afc-af51-216d2d1dfc41.manifest.json",
+      "size": 1443,
+      "chunks": [],
+      "chunkNames": [],
+      "info": {},
+      "emitted": true
+    },
+    {
+      "name": "SharePointLogo_0101288365319b852f2a3b625daa3a5d.svg",
+      "size": 3286,
+      "chunks": [],
+      "chunkNames": [],
+      "info": {},
+      "emitted": true
+    },
+    {
+      "name": "chunk.0.js",
+      "size": 2279,
+      "chunks": [
+        0
+      ],
+      "chunkNames": [],
+      "info": {},
+      "emitted": true
+    },
+    {
+      "name": "chunk.0.js.map",
+      "size": 1618,
+      "chunks": [
+        0
+      ],
+      "chunkNames": [],
+      "info": {
+        "development": true
+      },
+      "emitted": true
+    },
+    {
+      "name": "hello-world-adaptive-card-extension.js",
+      "size": 32229,
+      "chunks": [
+        "hello-world-adaptive-card-extension"
+      ],
+      "chunkNames": [
+        "hello-world-adaptive-card-extension"
+      ],
+      "info": {},
+      "emitted": true
+    },
+    {
+      "name": "hello-world-adaptive-card-extension.js.map",
+      "size": 23743,
+      "chunks": [
+        "hello-world-adaptive-card-extension"
+      ],
+      "chunkNames": [
+        "hello-world-adaptive-card-extension"
+      ],
+      "info": {
+        "development": true
+      },
+      "emitted": true
+    }
+  ],
+  "filteredAssets": 0,
+  "entrypoints": {
+    "hello-world-adaptive-card-extension": {
+      "chunks": [
+        "hello-world-adaptive-card-extension"
+      ],
+      "assets": [
+        "hello-world-adaptive-card-extension.js",
+        "hello-world-adaptive-card-extension.js.map"
+      ],
+      "children": {},
+      "childAssets": {}
+    }
+  },
+  "namedChunkGroups": {
+    "hello-world-adaptive-card-extension": {
+      "chunks": [
+        "hello-world-adaptive-card-extension"
+      ],
+      "assets": [
+        "hello-world-adaptive-card-extension.js",
+        "hello-world-adaptive-card-extension.js.map"
+      ],
+      "children": {},
+      "childAssets": {}
+    }
+  },
+  "chunks": [
+    {
+      "id": 0,
+      "rendered": true,
+      "initial": false,
+      "entry": false,
+      "size": 1131,
+      "names": [],
+      "files": [
+        "chunk.0.js",
+        "chunk.0.js.map"
+      ],
+      "hash": "d49b674634d2b5c9fd39",
+      "siblings": [],
+      "parents": [
+        "hello-world-adaptive-card-extension"
+      ],
+      "children": [],
+      "childrenByOrder": {},
+      "modules": [
+        {
+          "id": "09z0",
+          "identifier": "/Users/theoharris/Desktop/HSH Outlook Card/node_modules/source-map-loader/index.js!/Users/theoharris/Desktop/HSH Outlook Card/lib/adaptiveCardExtensions/helloWorld/HelloWorldPropertyPane.js",
+          "name": "./lib/adaptiveCardExtensions/helloWorld/HelloWorldPropertyPane.js",
+          "index": 6,
+          "index2": 7,
+          "size": 1131,
+          "cacheable": true,
+          "built": true,
+          "optional": false,
+          "prefetched": false,
+          "chunks": [
+            0
+          ],
+          "issuer": "/Users/theoharris/Desktop/HSH Outlook Card/node_modules/source-map-loader/index.js!/Users/theoharris/Desktop/HSH Outlook Card/lib/adaptiveCardExtensions/helloWorld/HelloWorldAdaptiveCardExtension.js",
+          "issuerId": "T4Pj",
+          "issuerName": "./lib/adaptiveCardExtensions/helloWorld/HelloWorldAdaptiveCardExtension.js",
+          "issuerPath": [
+            {
+              "id": "T4Pj",
+              "identifier": "/Users/theoharris/Desktop/HSH Outlook Card/node_modules/source-map-loader/index.js!/Users/theoharris/Desktop/HSH Outlook Card/lib/adaptiveCardExtensions/helloWorld/HelloWorldAdaptiveCardExtension.js",
+              "name": "./lib/adaptiveCardExtensions/helloWorld/HelloWorldAdaptiveCardExtension.js"
+            }
+          ],
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "assets": [],
+          "reasons": [
+            {
+              "moduleId": "T4Pj",
+              "moduleIdentifier": "/Users/theoharris/Desktop/HSH Outlook Card/node_modules/source-map-loader/index.js!/Users/theoharris/Desktop/HSH Outlook Card/lib/adaptiveCardExtensions/helloWorld/HelloWorldAdaptiveCardExtension.js",
+              "module": "./lib/adaptiveCardExtensions/helloWorld/HelloWorldAdaptiveCardExtension.js",
+              "moduleName": "./lib/adaptiveCardExtensions/helloWorld/HelloWorldAdaptiveCardExtension.js",
+              "type": "import()",
+              "userRequest": "./HelloWorldPropertyPane",
+              "loc": "217:15-49"
+            }
+          ],
+          "providedExports": [
+            "HelloWorldPropertyPane"
+          ],
+          "optimizationBailout": [],
+          "depth": 1,
+          "source": "import { PropertyPaneTextField } from '@microsoft/sp-property-pane';\nvar HelloWorldPropertyPane = /** @class */ (function () {\n    function HelloWorldPropertyPane() {\n    }\n    HelloWorldPropertyPane.prototype.getPropertyPaneConfiguration = function (properties) {\n        return {\n            pages: [\n                {\n                    header: {\n                        description: 'Card Settings'\n                    },\n                    groups: [\n                        {\n                            groupName: \"Filters\",\n                            groupFields: [\n                                PropertyPaneTextField('filterBySenderEmail', {\n                                    label: 'Filter by Sender',\n                                }),\n                                PropertyPaneTextField('filterBySubject', {\n                                    label: 'Filter by Subject'\n                                })\n                            ]\n                        }\n                    ]\n                }\n            ]\n        };\n    };\n    return HelloWorldPropertyPane;\n}());\nexport { HelloWorldPropertyPane };\n"
+        }
+      ],
+      "filteredModules": 0,
+      "origins": [
+        {
+          "moduleId": "T4Pj",
+          "module": "/Users/theoharris/Desktop/HSH Outlook Card/node_modules/source-map-loader/index.js!/Users/theoharris/Desktop/HSH Outlook Card/lib/adaptiveCardExtensions/helloWorld/HelloWorldAdaptiveCardExtension.js",
+          "moduleIdentifier": "/Users/theoharris/Desktop/HSH Outlook Card/node_modules/source-map-loader/index.js!/Users/theoharris/Desktop/HSH Outlook Card/lib/adaptiveCardExtensions/helloWorld/HelloWorldAdaptiveCardExtension.js",
+          "moduleName": "./lib/adaptiveCardExtensions/helloWorld/HelloWorldAdaptiveCardExtension.js",
+          "loc": "217:15-49",
+          "request": "./HelloWorldPropertyPane",
+          "reasons": []
+        }
+      ]
+    },
+    {
+      "id": "hello-world-adaptive-card-extension",
+      "rendered": true,
+      "initial": true,
+      "entry": true,
+      "size": 16501,
+      "names": [
+        "hello-world-adaptive-card-extension"
+      ],
+      "files": [
+        "hello-world-adaptive-card-extension.js",
+        "hello-world-adaptive-card-extension.js.map"
+      ],
+      "hash": "d2d4b885cc21e58d0f85",
+      "siblings": [],
+      "parents": [],
+      "children": [
+        0
+      ],
+      "childrenByOrder": {},
+      "modules": [
+        {
+          "id": "5nUA",
+          "identifier": "/Users/theoharris/Desktop/HSH Outlook Card/node_modules/file-loader/dist/cjs.js??ref--7-0!/Users/theoharris/Desktop/HSH Outlook Card/lib/adaptiveCardExtensions/helloWorld/assets/SharePointLogo.svg",
+          "name": "./lib/adaptiveCardExtensions/helloWorld/assets/SharePointLogo.svg",
+          "index": 5,
+          "index2": 4,
+          "size": 97,
+          "cacheable": true,
+          "built": true,
+          "optional": false,
+          "prefetched": false,
+          "chunks": [
+            "hello-world-adaptive-card-extension"
+          ],
+          "issuer": "/Users/theoharris/Desktop/HSH Outlook Card/node_modules/source-map-loader/index.js!/Users/theoharris/Desktop/HSH Outlook Card/lib/adaptiveCardExtensions/helloWorld/HelloWorldAdaptiveCardExtension.js",
+          "issuerId": "T4Pj",
+          "issuerName": "./lib/adaptiveCardExtensions/helloWorld/HelloWorldAdaptiveCardExtension.js",
+          "issuerPath": [
+            {
+              "id": "T4Pj",
+              "identifier": "/Users/theoharris/Desktop/HSH Outlook Card/node_modules/source-map-loader/index.js!/Users/theoharris/Desktop/HSH Outlook Card/lib/adaptiveCardExtensions/helloWorld/HelloWorldAdaptiveCardExtension.js",
+              "name": "./lib/adaptiveCardExtensions/helloWorld/HelloWorldAdaptiveCardExtension.js"
+            }
+          ],
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "assets": [
+            "SharePointLogo_0101288365319b852f2a3b625daa3a5d.svg"
+          ],
+          "reasons": [
+            {
+              "moduleId": "T4Pj",
+              "moduleIdentifier": "/Users/theoharris/Desktop/HSH Outlook Card/node_modules/source-map-loader/index.js!/Users/theoharris/Desktop/HSH Outlook Card/lib/adaptiveCardExtensions/helloWorld/HelloWorldAdaptiveCardExtension.js",
+              "module": "./lib/adaptiveCardExtensions/helloWorld/HelloWorldAdaptiveCardExtension.js",
+              "moduleName": "./lib/adaptiveCardExtensions/helloWorld/HelloWorldAdaptiveCardExtension.js",
+              "type": "cjs require",
+              "userRequest": "./assets/SharePointLogo.svg",
+              "loc": "210:51-89"
+            }
+          ],
+          "providedExports": null,
+          "optimizationBailout": [],
+          "depth": 1,
+          "source": "module.exports = __webpack_public_path__ + \"SharePointLogo_0101288365319b852f2a3b625daa3a5d.svg\";"
+        },
+        {
+          "id": "8Kdd",
+          "identifier": "/Users/theoharris/Desktop/HSH Outlook Card/node_modules/source-map-loader/index.js!/Users/theoharris/Desktop/HSH Outlook Card/lib/adaptiveCardExtensions/helloWorld/cardView/CardView.js",
+          "name": "./lib/adaptiveCardExtensions/helloWorld/cardView/CardView.js",
+          "index": 2,
+          "index2": 1,
+          "size": 2459,
+          "cacheable": true,
+          "built": true,
+          "optional": false,
+          "prefetched": false,
+          "chunks": [
+            "hello-world-adaptive-card-extension"
+          ],
+          "issuer": "/Users/theoharris/Desktop/HSH Outlook Card/node_modules/source-map-loader/index.js!/Users/theoharris/Desktop/HSH Outlook Card/lib/adaptiveCardExtensions/helloWorld/HelloWorldAdaptiveCardExtension.js",
+          "issuerId": "T4Pj",
+          "issuerName": "./lib/adaptiveCardExtensions/helloWorld/HelloWorldAdaptiveCardExtension.js",
+          "issuerPath": [
+            {
+              "id": "T4Pj",
+              "identifier": "/Users/theoharris/Desktop/HSH Outlook Card/node_modules/source-map-loader/index.js!/Users/theoharris/Desktop/HSH Outlook Card/lib/adaptiveCardExtensions/helloWorld/HelloWorldAdaptiveCardExtension.js",
+              "name": "./lib/adaptiveCardExtensions/helloWorld/HelloWorldAdaptiveCardExtension.js"
+            }
+          ],
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "assets": [],
+          "reasons": [
+            {
+              "moduleId": "T4Pj",
+              "moduleIdentifier": "/Users/theoharris/Desktop/HSH Outlook Card/node_modules/source-map-loader/index.js!/Users/theoharris/Desktop/HSH Outlook Card/lib/adaptiveCardExtensions/helloWorld/HelloWorldAdaptiveCardExtension.js",
+              "module": "./lib/adaptiveCardExtensions/helloWorld/HelloWorldAdaptiveCardExtension.js",
+              "moduleName": "./lib/adaptiveCardExtensions/helloWorld/HelloWorldAdaptiveCardExtension.js",
+              "type": "harmony side effect evaluation",
+              "userRequest": "./cardView/CardView",
+              "loc": "58:0-47"
+            },
+            {
+              "moduleId": "T4Pj",
+              "moduleIdentifier": "/Users/theoharris/Desktop/HSH Outlook Card/node_modules/source-map-loader/index.js!/Users/theoharris/Desktop/HSH Outlook Card/lib/adaptiveCardExtensions/helloWorld/HelloWorldAdaptiveCardExtension.js",
+              "module": "./lib/adaptiveCardExtensions/helloWorld/HelloWorldAdaptiveCardExtension.js",
+              "moduleName": "./lib/adaptiveCardExtensions/helloWorld/HelloWorldAdaptiveCardExtension.js",
+              "type": "harmony import specifier",
+              "userRequest": "./cardView/CardView",
+              "loc": "108:100-108"
+            }
+          ],
+          "providedExports": [
+            "CardView"
+          ],
+          "optimizationBailout": [],
+          "depth": 1,
+          "source": "var __extends = (this && this.__extends) || (function () {\n    var extendStatics = function (d, b) {\n        extendStatics = Object.setPrototypeOf ||\n            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||\n            function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };\n        return extendStatics(d, b);\n    };\n    return function (d, b) {\n        extendStatics(d, b);\n        function __() { this.constructor = d; }\n        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());\n    };\n})();\nimport { BaseBasicCardView } from '@microsoft/sp-adaptive-card-extension-base';\nimport { QUICK_VIEW_REGISTRY_ID } from '../HelloWorldAdaptiveCardExtension';\nvar CardView = /** @class */ (function (_super) {\n    __extends(CardView, _super);\n    function CardView() {\n        return _super !== null && _super.apply(this, arguments) || this;\n    }\n    Object.defineProperty(CardView.prototype, \"cardButtons\", {\n        get: function () {\n            return [\n                {\n                    title: \"Preview Messages\",\n                    action: {\n                        type: 'QuickView',\n                        parameters: {\n                            view: QUICK_VIEW_REGISTRY_ID\n                        }\n                    }\n                },\n                {\n                    title: 'Outlook',\n                    action: {\n                        type: 'ExternalLink',\n                        parameters: {\n                            target: \"http://outlook.office.com\"\n                        }\n                    }\n                }\n            ];\n        },\n        enumerable: true,\n        configurable: true\n    });\n    Object.defineProperty(CardView.prototype, \"data\", {\n        get: function () {\n            return {\n                primaryText: \"You have \" + this.state.unreadCount + \" unread messages\",\n                unreadCount: this.state.unreadCount\n            };\n        },\n        enumerable: true,\n        configurable: true\n    });\n    Object.defineProperty(CardView.prototype, \"onCardSelection\", {\n        get: function () {\n            return {\n                type: 'QuickView',\n                parameters: {\n                    view: QUICK_VIEW_REGISTRY_ID\n                }\n            };\n        },\n        enumerable: true,\n        configurable: true\n    });\n    return CardView;\n}(BaseBasicCardView));\nexport { CardView };\n"
+        },
+        {
+          "id": "I6O9",
+          "identifier": "external \"@microsoft/sp-loader\"",
+          "name": "external \"@microsoft/sp-loader\"",
+          "index": null,
+          "index2": null,
+          "size": 42,
+          "built": true,
+          "optional": false,
+          "prefetched": false,
+          "chunks": [
+            "hello-world-adaptive-card-extension"
+          ],
+          "issuer": null,
+          "issuerId": null,
+          "issuerName": null,
+          "issuerPath": null,
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "assets": [],
+          "reasons": [],
+          "providedExports": null,
+          "optimizationBailout": [],
+          "depth": null
+        },
+        {
+          "id": "T4Pj",
+          "identifier": "/Users/theoharris/Desktop/HSH Outlook Card/node_modules/source-map-loader/index.js!/Users/theoharris/Desktop/HSH Outlook Card/lib/adaptiveCardExtensions/helloWorld/HelloWorldAdaptiveCardExtension.js",
+          "name": "./lib/adaptiveCardExtensions/helloWorld/HelloWorldAdaptiveCardExtension.js",
+          "index": 0,
+          "index2": 5,
+          "size": 11907,
+          "cacheable": true,
+          "built": true,
+          "optional": false,
+          "prefetched": false,
+          "chunks": [
+            "hello-world-adaptive-card-extension"
+          ],
+          "issuer": null,
+          "issuerId": null,
+          "issuerName": null,
+          "issuerPath": null,
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "assets": [],
+          "reasons": [
+            {
+              "moduleId": "8Kdd",
+              "moduleIdentifier": "/Users/theoharris/Desktop/HSH Outlook Card/node_modules/source-map-loader/index.js!/Users/theoharris/Desktop/HSH Outlook Card/lib/adaptiveCardExtensions/helloWorld/cardView/CardView.js",
+              "module": "./lib/adaptiveCardExtensions/helloWorld/cardView/CardView.js",
+              "moduleName": "./lib/adaptiveCardExtensions/helloWorld/cardView/CardView.js",
+              "type": "harmony side effect evaluation",
+              "userRequest": "../HelloWorldAdaptiveCardExtension",
+              "loc": "15:0-76"
+            },
+            {
+              "moduleId": "8Kdd",
+              "moduleIdentifier": "/Users/theoharris/Desktop/HSH Outlook Card/node_modules/source-map-loader/index.js!/Users/theoharris/Desktop/HSH Outlook Card/lib/adaptiveCardExtensions/helloWorld/cardView/CardView.js",
+              "module": "./lib/adaptiveCardExtensions/helloWorld/cardView/CardView.js",
+              "moduleName": "./lib/adaptiveCardExtensions/helloWorld/cardView/CardView.js",
+              "type": "harmony import specifier",
+              "userRequest": "../HelloWorldAdaptiveCardExtension",
+              "loc": "29:34-56"
+            },
+            {
+              "moduleId": "8Kdd",
+              "moduleIdentifier": "/Users/theoharris/Desktop/HSH Outlook Card/node_modules/source-map-loader/index.js!/Users/theoharris/Desktop/HSH Outlook Card/lib/adaptiveCardExtensions/helloWorld/cardView/CardView.js",
+              "module": "./lib/adaptiveCardExtensions/helloWorld/cardView/CardView.js",
+              "moduleName": "./lib/adaptiveCardExtensions/helloWorld/cardView/CardView.js",
+              "type": "harmony import specifier",
+              "userRequest": "../HelloWorldAdaptiveCardExtension",
+              "loc": "62:26-48"
+            },
+            {
+              "moduleId": null,
+              "moduleIdentifier": null,
+              "module": null,
+              "moduleName": null,
+              "type": "single entry",
+              "userRequest": "/Users/theoharris/Desktop/HSH Outlook Card/lib/adaptiveCardExtensions/helloWorld/HelloWorldAdaptiveCardExtension.js",
+              "loc": "hello-world-adaptive-card-extension"
+            }
+          ],
+          "providedExports": [
+            "QUICK_VIEW_REGISTRY_ID",
+            "default"
+          ],
+          "optimizationBailout": [],
+          "depth": 0,
+          "source": "var __extends = (this && this.__extends) || (function () {\n    var extendStatics = function (d, b) {\n        extendStatics = Object.setPrototypeOf ||\n            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||\n            function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };\n        return extendStatics(d, b);\n    };\n    return function (d, b) {\n        extendStatics(d, b);\n        function __() { this.constructor = d; }\n        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());\n    };\n})();\nvar __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {\n    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }\n    return new (P || (P = Promise))(function (resolve, reject) {\n        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }\n        function rejected(value) { try { step(generator[\"throw\"](value)); } catch (e) { reject(e); } }\n        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }\n        step((generator = generator.apply(thisArg, _arguments || [])).next());\n    });\n};\nvar __generator = (this && this.__generator) || function (thisArg, body) {\n    var _ = { label: 0, sent: function() { if (t[0] & 1) throw t[1]; return t[1]; }, trys: [], ops: [] }, f, y, t, g;\n    return g = { next: verb(0), \"throw\": verb(1), \"return\": verb(2) }, typeof Symbol === \"function\" && (g[Symbol.iterator] = function() { return this; }), g;\n    function verb(n) { return function (v) { return step([n, v]); }; }\n    function step(op) {\n        if (f) throw new TypeError(\"Generator is already executing.\");\n        while (_) try {\n            if (f = 1, y && (t = op[0] & 2 ? y[\"return\"] : op[0] ? y[\"throw\"] || ((t = y[\"return\"]) && t.call(y), 0) : y.next) && !(t = t.call(y, op[1])).done) return t;\n            if (y = 0, t) op = [op[0] & 2, t.value];\n            switch (op[0]) {\n                case 0: case 1: t = op; break;\n                case 4: _.label++; return { value: op[1], done: false };\n                case 5: _.label++; y = op[1]; op = [0]; continue;\n                case 7: op = _.ops.pop(); _.trys.pop(); continue;\n                default:\n                    if (!(t = _.trys, t = t.length > 0 && t[t.length - 1]) && (op[0] === 6 || op[0] === 2)) { _ = 0; continue; }\n                    if (op[0] === 3 && (!t || (op[1] > t[0] && op[1] < t[3]))) { _.label = op[1]; break; }\n                    if (op[0] === 6 && _.label < t[1]) { _.label = t[1]; t = op; break; }\n                    if (t && _.label < t[2]) { _.label = t[2]; _.ops.push(op); break; }\n                    if (t[2]) _.ops.pop();\n                    _.trys.pop(); continue;\n            }\n            op = body.call(thisArg, _);\n        } catch (e) { op = [6, e]; y = 0; } finally { f = t = 0; }\n        if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };\n    }\n};\nvar __spreadArrays = (this && this.__spreadArrays) || function () {\n    for (var s = 0, i = 0, il = arguments.length; i < il; i++) s += arguments[i].length;\n    for (var r = Array(s), k = 0, i = 0; i < il; i++)\n        for (var a = arguments[i], j = 0, jl = a.length; j < jl; j++, k++)\n            r[k] = a[j];\n    return r;\n};\nimport { BaseAdaptiveCardExtension } from '@microsoft/sp-adaptive-card-extension-base';\nimport { CardView } from './cardView/CardView';\nimport { QuickView } from './quickView/QuickView';\nvar CARD_VIEW_REGISTRY_ID = 'HelloWorld_CARD_VIEW';\nexport var QUICK_VIEW_REGISTRY_ID = 'HelloWorld_QUICK_VIEW';\nvar HelloWorldAdaptiveCardExtension = /** @class */ (function (_super) {\n    __extends(HelloWorldAdaptiveCardExtension, _super);\n    function HelloWorldAdaptiveCardExtension() {\n        return _super !== null && _super.apply(this, arguments) || this;\n    }\n    HelloWorldAdaptiveCardExtension.prototype.onPropertyPaneFieldChanged = function () {\n        return __awaiter(this, void 0, void 0, function () {\n            return __generator(this, function (_a) {\n                switch (_a.label) {\n                    case 0:\n                        this.setState({ appliedFilters: 'isRead ne true&$count=true&$top=999' });\n                        this.applySenderFilter();\n                        this.applySubjectFilter();\n                        return [4 /*yield*/, this.getUnreadCount()];\n                    case 1:\n                        _a.sent();\n                        return [4 /*yield*/, this.getEmailDetails()];\n                    case 2:\n                        _a.sent();\n                        return [2 /*return*/, Promise.resolve()];\n                }\n            });\n        });\n    };\n    HelloWorldAdaptiveCardExtension.prototype.onInit = function () {\n        return __awaiter(this, void 0, void 0, function () {\n            return __generator(this, function (_a) {\n                switch (_a.label) {\n                    case 0:\n                        this.state = {\n                            description: this.properties.description,\n                            unreadCount: this.properties.unreadCount || 0,\n                            emails: [],\n                            filterBySenderEmail: this.properties.filterBySenderEmail,\n                            filterBySubject: this.properties.filterBySubject,\n                            appliedFilters: this.properties.appliedFilters\n                        };\n                        this.setState({ appliedFilters: 'isRead ne true&$count=true&$top=999' });\n                        this.applySenderFilter();\n                        this.applySubjectFilter();\n                        return [4 /*yield*/, this.getUnreadCount()];\n                    case 1:\n                        _a.sent();\n                        return [4 /*yield*/, this.getEmailDetails()];\n                    case 2:\n                        _a.sent();\n                        this.cardNavigator.register(CARD_VIEW_REGISTRY_ID, function () { return new CardView(); });\n                        this.quickViewNavigator.register(QUICK_VIEW_REGISTRY_ID, function () { return new QuickView(); });\n                        return [2 /*return*/, Promise.resolve()];\n                }\n            });\n        });\n    };\n    HelloWorldAdaptiveCardExtension.prototype.getUnreadCount = function () {\n        return __awaiter(this, void 0, void 0, function () {\n            var graphClient, error_1;\n            var _this = this;\n            return __generator(this, function (_a) {\n                switch (_a.label) {\n                    case 0: return [4 /*yield*/, this.context.msGraphClientFactory.getClient()];\n                    case 1:\n                        graphClient = _a.sent();\n                        _a.label = 2;\n                    case 2:\n                        _a.trys.push([2, 4, , 5]);\n                        return [4 /*yield*/, graphClient\n                                .api('/me/mailfolders/inbox/messages')\n                                .version('v1.0')\n                                .filter(this.state.appliedFilters)\n                                .get(function (error, response, rawResponse) {\n                                _this.setState({ unreadCount: response.value.length });\n                            })];\n                    case 3:\n                        _a.sent();\n                        return [3 /*break*/, 5];\n                    case 4:\n                        error_1 = _a.sent();\n                        console.log(error_1);\n                        return [3 /*break*/, 5];\n                    case 5: return [2 /*return*/];\n                }\n            });\n        });\n    };\n    HelloWorldAdaptiveCardExtension.prototype.applySenderFilter = function () {\n        if (this.properties.filterBySenderEmail) {\n            var prevFilterString = this.state.appliedFilters;\n            this.setState({ appliedFilters: \"(from/emailAddress/address) eq '\" + this.properties.filterBySenderEmail + \"'\" + ' AND ' + prevFilterString });\n        }\n        console.log('applySenderFilter', this.state.appliedFilters);\n    };\n    HelloWorldAdaptiveCardExtension.prototype.applySubjectFilter = function () {\n        if (this.properties.filterBySubject) {\n            var prevFilterString = this.state.appliedFilters;\n            this.setState({ appliedFilters: \"contains(subject, '\" + this.properties.filterBySubject + \"')\" + ' AND ' + prevFilterString });\n        }\n        console.log('applySubjectFilter', this.state.appliedFilters);\n    };\n    HelloWorldAdaptiveCardExtension.prototype.getEmailDetails = function () {\n        return __awaiter(this, void 0, void 0, function () {\n            var graphClient, error_2;\n            var _this = this;\n            return __generator(this, function (_a) {\n                switch (_a.label) {\n                    case 0: return [4 /*yield*/, this.context.msGraphClientFactory.getClient()];\n                    case 1:\n                        graphClient = _a.sent();\n                        _a.label = 2;\n                    case 2:\n                        _a.trys.push([2, 4, , 5]);\n                        return [4 /*yield*/, graphClient\n                                .api('/me/messages')\n                                .version('v1.0')\n                                .filter(this.state.appliedFilters)\n                                .get(function (error, response, rawResponse) {\n                                console.log(\"getEmailDetails response value:\", response.value);\n                                response.value.forEach(function (email) {\n                                    var emails = __spreadArrays(_this.state.emails);\n                                    emails.push({\n                                        webLink: email.webLink,\n                                        subject: email.subject,\n                                        sender: email.sender.emailAddress.name,\n                                        senderEmail: email.sender.emailAddress.address\n                                    });\n                                    _this.setState({ emails: emails });\n                                });\n                            })];\n                    case 3:\n                        _a.sent();\n                        return [3 /*break*/, 5];\n                    case 4:\n                        error_2 = _a.sent();\n                        console.log(error_2);\n                        return [3 /*break*/, 5];\n                    case 5: return [2 /*return*/];\n                }\n            });\n        });\n    };\n    Object.defineProperty(HelloWorldAdaptiveCardExtension.prototype, \"title\", {\n        get: function () {\n            return this.properties.title;\n        },\n        enumerable: true,\n        configurable: true\n    });\n    Object.defineProperty(HelloWorldAdaptiveCardExtension.prototype, \"iconProperty\", {\n        get: function () {\n            return this.properties.iconProperty || require('./assets/SharePointLogo.svg');\n        },\n        enumerable: true,\n        configurable: true\n    });\n    HelloWorldAdaptiveCardExtension.prototype.loadPropertyPaneResources = function () {\n        var _this = this;\n        return import('./HelloWorldPropertyPane')\n            .then(function (component) {\n            _this._deferredPropertyPane = new component.HelloWorldPropertyPane();\n        });\n    };\n    HelloWorldAdaptiveCardExtension.prototype.renderCard = function () {\n        return CARD_VIEW_REGISTRY_ID;\n    };\n    HelloWorldAdaptiveCardExtension.prototype.getPropertyPaneConfiguration = function () {\n        return this._deferredPropertyPane.getPropertyPaneConfiguration(this.properties);\n    };\n    return HelloWorldAdaptiveCardExtension;\n}(BaseAdaptiveCardExtension));\nexport default HelloWorldAdaptiveCardExtension;\n"
+        },
+        {
+          "id": "YBiG",
+          "identifier": "/Users/theoharris/Desktop/HSH Outlook Card/lib/adaptiveCardExtensions/helloWorld/quickView/template/QuickViewTemplate.json",
+          "name": "./lib/adaptiveCardExtensions/helloWorld/quickView/template/QuickViewTemplate.json",
+          "index": 4,
+          "index2": 2,
+          "size": 565,
+          "cacheable": true,
+          "built": true,
+          "optional": false,
+          "prefetched": false,
+          "chunks": [
+            "hello-world-adaptive-card-extension"
+          ],
+          "issuer": "/Users/theoharris/Desktop/HSH Outlook Card/node_modules/source-map-loader/index.js!/Users/theoharris/Desktop/HSH Outlook Card/lib/adaptiveCardExtensions/helloWorld/quickView/QuickView.js",
+          "issuerId": "r39S",
+          "issuerName": "./lib/adaptiveCardExtensions/helloWorld/quickView/QuickView.js",
+          "issuerPath": [
+            {
+              "id": "T4Pj",
+              "identifier": "/Users/theoharris/Desktop/HSH Outlook Card/node_modules/source-map-loader/index.js!/Users/theoharris/Desktop/HSH Outlook Card/lib/adaptiveCardExtensions/helloWorld/HelloWorldAdaptiveCardExtension.js",
+              "name": "./lib/adaptiveCardExtensions/helloWorld/HelloWorldAdaptiveCardExtension.js"
+            },
+            {
+              "id": "r39S",
+              "identifier": "/Users/theoharris/Desktop/HSH Outlook Card/node_modules/source-map-loader/index.js!/Users/theoharris/Desktop/HSH Outlook Card/lib/adaptiveCardExtensions/helloWorld/quickView/QuickView.js",
+              "name": "./lib/adaptiveCardExtensions/helloWorld/quickView/QuickView.js"
+            }
+          ],
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "assets": [],
+          "reasons": [
+            {
+              "moduleId": "r39S",
+              "moduleIdentifier": "/Users/theoharris/Desktop/HSH Outlook Card/node_modules/source-map-loader/index.js!/Users/theoharris/Desktop/HSH Outlook Card/lib/adaptiveCardExtensions/helloWorld/quickView/QuickView.js",
+              "module": "./lib/adaptiveCardExtensions/helloWorld/quickView/QuickView.js",
+              "moduleName": "./lib/adaptiveCardExtensions/helloWorld/quickView/QuickView.js",
+              "type": "cjs require",
+              "userRequest": "./template/QuickViewTemplate.json",
+              "loc": "31:19-63"
+            }
+          ],
+          "providedExports": [
+            "schema",
+            "type",
+            "version",
+            "body",
+            "default"
+          ],
+          "optimizationBailout": [],
+          "depth": 2,
+          "source": "{\n  \"schema\": \"http://adaptivecards.io/schemas/adaptive-card.json\",\n  \"type\": \"AdaptiveCard\",\n  \"version\": \"1.2\",\n  \"body\": [\n    {\n      \"type\": \"Container\",\n      \"$data\": \"${emails}\",\n      \"items\": [\n        {\n          \"type\": \"TextBlock\",\n          \"text\": \"${sender}:\",\n          \"weight\": \"bolder\",\n          \"size\": \"medium\"\n        },\n        {\n          \"type\": \"TextBlock\",\n          \"text\": \"${subject}\",\n          \"wrap\": true\n        }\n      ],\n      \"selectAction\": {\n        \"type\": \"Action.OpenUrl\",\n        \"url\": \"${webLink}\"\n      }\n    }\n  ]\n}"
+        },
+        {
+          "id": "lz/E",
+          "identifier": "external \"@microsoft/sp-adaptive-card-extension-base\"",
+          "name": "external \"@microsoft/sp-adaptive-card-extension-base\"",
+          "index": 1,
+          "index2": 0,
+          "size": 42,
+          "built": true,
+          "optional": false,
+          "prefetched": false,
+          "chunks": [
+            "hello-world-adaptive-card-extension"
+          ],
+          "issuer": "/Users/theoharris/Desktop/HSH Outlook Card/node_modules/source-map-loader/index.js!/Users/theoharris/Desktop/HSH Outlook Card/lib/adaptiveCardExtensions/helloWorld/HelloWorldAdaptiveCardExtension.js",
+          "issuerId": "T4Pj",
+          "issuerName": "./lib/adaptiveCardExtensions/helloWorld/HelloWorldAdaptiveCardExtension.js",
+          "issuerPath": [
+            {
+              "id": "T4Pj",
+              "identifier": "/Users/theoharris/Desktop/HSH Outlook Card/node_modules/source-map-loader/index.js!/Users/theoharris/Desktop/HSH Outlook Card/lib/adaptiveCardExtensions/helloWorld/HelloWorldAdaptiveCardExtension.js",
+              "name": "./lib/adaptiveCardExtensions/helloWorld/HelloWorldAdaptiveCardExtension.js"
+            }
+          ],
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "assets": [],
+          "reasons": [
+            {
+              "moduleId": "8Kdd",
+              "moduleIdentifier": "/Users/theoharris/Desktop/HSH Outlook Card/node_modules/source-map-loader/index.js!/Users/theoharris/Desktop/HSH Outlook Card/lib/adaptiveCardExtensions/helloWorld/cardView/CardView.js",
+              "module": "./lib/adaptiveCardExtensions/helloWorld/cardView/CardView.js",
+              "moduleName": "./lib/adaptiveCardExtensions/helloWorld/cardView/CardView.js",
+              "type": "harmony side effect evaluation",
+              "userRequest": "@microsoft/sp-adaptive-card-extension-base",
+              "loc": "14:0-79"
+            },
+            {
+              "moduleId": "8Kdd",
+              "moduleIdentifier": "/Users/theoharris/Desktop/HSH Outlook Card/node_modules/source-map-loader/index.js!/Users/theoharris/Desktop/HSH Outlook Card/lib/adaptiveCardExtensions/helloWorld/cardView/CardView.js",
+              "module": "./lib/adaptiveCardExtensions/helloWorld/cardView/CardView.js",
+              "moduleName": "./lib/adaptiveCardExtensions/helloWorld/cardView/CardView.js",
+              "type": "harmony import specifier",
+              "userRequest": "@microsoft/sp-adaptive-card-extension-base",
+              "loc": "70:2-19"
+            },
+            {
+              "moduleId": "T4Pj",
+              "moduleIdentifier": "/Users/theoharris/Desktop/HSH Outlook Card/node_modules/source-map-loader/index.js!/Users/theoharris/Desktop/HSH Outlook Card/lib/adaptiveCardExtensions/helloWorld/HelloWorldAdaptiveCardExtension.js",
+              "module": "./lib/adaptiveCardExtensions/helloWorld/HelloWorldAdaptiveCardExtension.js",
+              "moduleName": "./lib/adaptiveCardExtensions/helloWorld/HelloWorldAdaptiveCardExtension.js",
+              "type": "harmony side effect evaluation",
+              "userRequest": "@microsoft/sp-adaptive-card-extension-base",
+              "loc": "57:0-87"
+            },
+            {
+              "moduleId": "T4Pj",
+              "moduleIdentifier": "/Users/theoharris/Desktop/HSH Outlook Card/node_modules/source-map-loader/index.js!/Users/theoharris/Desktop/HSH Outlook Card/lib/adaptiveCardExtensions/helloWorld/HelloWorldAdaptiveCardExtension.js",
+              "module": "./lib/adaptiveCardExtensions/helloWorld/HelloWorldAdaptiveCardExtension.js",
+              "moduleName": "./lib/adaptiveCardExtensions/helloWorld/HelloWorldAdaptiveCardExtension.js",
+              "type": "harmony import specifier",
+              "userRequest": "@microsoft/sp-adaptive-card-extension-base",
+              "loc": "229:2-27"
+            },
+            {
+              "moduleId": "r39S",
+              "moduleIdentifier": "/Users/theoharris/Desktop/HSH Outlook Card/node_modules/source-map-loader/index.js!/Users/theoharris/Desktop/HSH Outlook Card/lib/adaptiveCardExtensions/helloWorld/quickView/QuickView.js",
+              "module": "./lib/adaptiveCardExtensions/helloWorld/quickView/QuickView.js",
+              "moduleName": "./lib/adaptiveCardExtensions/helloWorld/quickView/QuickView.js",
+              "type": "harmony side effect evaluation",
+              "userRequest": "@microsoft/sp-adaptive-card-extension-base",
+              "loc": "14:0-82"
+            },
+            {
+              "moduleId": "r39S",
+              "moduleIdentifier": "/Users/theoharris/Desktop/HSH Outlook Card/node_modules/source-map-loader/index.js!/Users/theoharris/Desktop/HSH Outlook Card/lib/adaptiveCardExtensions/helloWorld/quickView/QuickView.js",
+              "module": "./lib/adaptiveCardExtensions/helloWorld/quickView/QuickView.js",
+              "moduleName": "./lib/adaptiveCardExtensions/helloWorld/quickView/QuickView.js",
+              "type": "harmony import specifier",
+              "userRequest": "@microsoft/sp-adaptive-card-extension-base",
+              "loc": "37:2-22"
+            }
+          ],
+          "providedExports": null,
+          "optimizationBailout": [],
+          "depth": 1
+        },
+        {
+          "id": "r39S",
+          "identifier": "/Users/theoharris/Desktop/HSH Outlook Card/node_modules/source-map-loader/index.js!/Users/theoharris/Desktop/HSH Outlook Card/lib/adaptiveCardExtensions/helloWorld/quickView/QuickView.js",
+          "name": "./lib/adaptiveCardExtensions/helloWorld/quickView/QuickView.js",
+          "index": 3,
+          "index2": 3,
+          "size": 1389,
+          "cacheable": true,
+          "built": true,
+          "optional": false,
+          "prefetched": false,
+          "chunks": [
+            "hello-world-adaptive-card-extension"
+          ],
+          "issuer": "/Users/theoharris/Desktop/HSH Outlook Card/node_modules/source-map-loader/index.js!/Users/theoharris/Desktop/HSH Outlook Card/lib/adaptiveCardExtensions/helloWorld/HelloWorldAdaptiveCardExtension.js",
+          "issuerId": "T4Pj",
+          "issuerName": "./lib/adaptiveCardExtensions/helloWorld/HelloWorldAdaptiveCardExtension.js",
+          "issuerPath": [
+            {
+              "id": "T4Pj",
+              "identifier": "/Users/theoharris/Desktop/HSH Outlook Card/node_modules/source-map-loader/index.js!/Users/theoharris/Desktop/HSH Outlook Card/lib/adaptiveCardExtensions/helloWorld/HelloWorldAdaptiveCardExtension.js",
+              "name": "./lib/adaptiveCardExtensions/helloWorld/HelloWorldAdaptiveCardExtension.js"
+            }
+          ],
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "assets": [],
+          "reasons": [
+            {
+              "moduleId": "T4Pj",
+              "moduleIdentifier": "/Users/theoharris/Desktop/HSH Outlook Card/node_modules/source-map-loader/index.js!/Users/theoharris/Desktop/HSH Outlook Card/lib/adaptiveCardExtensions/helloWorld/HelloWorldAdaptiveCardExtension.js",
+              "module": "./lib/adaptiveCardExtensions/helloWorld/HelloWorldAdaptiveCardExtension.js",
+              "moduleName": "./lib/adaptiveCardExtensions/helloWorld/HelloWorldAdaptiveCardExtension.js",
+              "type": "harmony side effect evaluation",
+              "userRequest": "./quickView/QuickView",
+              "loc": "59:0-50"
+            },
+            {
+              "moduleId": "T4Pj",
+              "moduleIdentifier": "/Users/theoharris/Desktop/HSH Outlook Card/node_modules/source-map-loader/index.js!/Users/theoharris/Desktop/HSH Outlook Card/lib/adaptiveCardExtensions/helloWorld/HelloWorldAdaptiveCardExtension.js",
+              "module": "./lib/adaptiveCardExtensions/helloWorld/HelloWorldAdaptiveCardExtension.js",
+              "moduleName": "./lib/adaptiveCardExtensions/helloWorld/HelloWorldAdaptiveCardExtension.js",
+              "type": "harmony import specifier",
+              "userRequest": "./quickView/QuickView",
+              "loc": "109:106-115"
+            }
+          ],
+          "providedExports": [
+            "QuickView"
+          ],
+          "optimizationBailout": [],
+          "depth": 1,
+          "source": "var __extends = (this && this.__extends) || (function () {\n    var extendStatics = function (d, b) {\n        extendStatics = Object.setPrototypeOf ||\n            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||\n            function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };\n        return extendStatics(d, b);\n    };\n    return function (d, b) {\n        extendStatics(d, b);\n        function __() { this.constructor = d; }\n        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());\n    };\n})();\nimport { BaseAdaptiveCardView } from '@microsoft/sp-adaptive-card-extension-base';\nvar QuickView = /** @class */ (function (_super) {\n    __extends(QuickView, _super);\n    function QuickView() {\n        return _super !== null && _super.apply(this, arguments) || this;\n    }\n    Object.defineProperty(QuickView.prototype, \"data\", {\n        get: function () {\n            return {\n                emails: this.state.emails\n            };\n        },\n        enumerable: true,\n        configurable: true\n    });\n    Object.defineProperty(QuickView.prototype, \"template\", {\n        get: function () {\n            return require('./template/QuickViewTemplate.json');\n        },\n        enumerable: true,\n        configurable: true\n    });\n    return QuickView;\n}(BaseAdaptiveCardView));\nexport { QuickView };\n"
+        }
+      ],
+      "filteredModules": 0,
+      "origins": [
+        {
+          "module": "",
+          "moduleIdentifier": "",
+          "moduleName": "",
+          "loc": "hello-world-adaptive-card-extension",
+          "request": "/Users/theoharris/Desktop/HSH Outlook Card/lib/adaptiveCardExtensions/helloWorld/HelloWorldAdaptiveCardExtension.js",
+          "reasons": []
+        }
+      ]
+    }
+  ],
+  "modules": [
+    {
+      "id": "09z0",
+      "identifier": "/Users/theoharris/Desktop/HSH Outlook Card/node_modules/source-map-loader/index.js!/Users/theoharris/Desktop/HSH Outlook Card/lib/adaptiveCardExtensions/helloWorld/HelloWorldPropertyPane.js",
+      "name": "./lib/adaptiveCardExtensions/helloWorld/HelloWorldPropertyPane.js",
+      "index": 6,
+      "index2": 7,
+      "size": 1131,
+      "cacheable": true,
+      "built": true,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        0
+      ],
+      "issuer": "/Users/theoharris/Desktop/HSH Outlook Card/node_modules/source-map-loader/index.js!/Users/theoharris/Desktop/HSH Outlook Card/lib/adaptiveCardExtensions/helloWorld/HelloWorldAdaptiveCardExtension.js",
+      "issuerId": "T4Pj",
+      "issuerName": "./lib/adaptiveCardExtensions/helloWorld/HelloWorldAdaptiveCardExtension.js",
+      "issuerPath": [
+        {
+          "id": "T4Pj",
+          "identifier": "/Users/theoharris/Desktop/HSH Outlook Card/node_modules/source-map-loader/index.js!/Users/theoharris/Desktop/HSH Outlook Card/lib/adaptiveCardExtensions/helloWorld/HelloWorldAdaptiveCardExtension.js",
+          "name": "./lib/adaptiveCardExtensions/helloWorld/HelloWorldAdaptiveCardExtension.js"
+        }
+      ],
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "assets": [],
+      "reasons": [
+        {
+          "moduleId": "T4Pj",
+          "moduleIdentifier": "/Users/theoharris/Desktop/HSH Outlook Card/node_modules/source-map-loader/index.js!/Users/theoharris/Desktop/HSH Outlook Card/lib/adaptiveCardExtensions/helloWorld/HelloWorldAdaptiveCardExtension.js",
+          "module": "./lib/adaptiveCardExtensions/helloWorld/HelloWorldAdaptiveCardExtension.js",
+          "moduleName": "./lib/adaptiveCardExtensions/helloWorld/HelloWorldAdaptiveCardExtension.js",
+          "type": "import()",
+          "userRequest": "./HelloWorldPropertyPane",
+          "loc": "217:15-49"
+        }
+      ],
+      "providedExports": [
+        "HelloWorldPropertyPane"
+      ],
+      "optimizationBailout": [],
+      "depth": 1,
+      "source": "import { PropertyPaneTextField } from '@microsoft/sp-property-pane';\nvar HelloWorldPropertyPane = /** @class */ (function () {\n    function HelloWorldPropertyPane() {\n    }\n    HelloWorldPropertyPane.prototype.getPropertyPaneConfiguration = function (properties) {\n        return {\n            pages: [\n                {\n                    header: {\n                        description: 'Card Settings'\n                    },\n                    groups: [\n                        {\n                            groupName: \"Filters\",\n                            groupFields: [\n                                PropertyPaneTextField('filterBySenderEmail', {\n                                    label: 'Filter by Sender',\n                                }),\n                                PropertyPaneTextField('filterBySubject', {\n                                    label: 'Filter by Subject'\n                                })\n                            ]\n                        }\n                    ]\n                }\n            ]\n        };\n    };\n    return HelloWorldPropertyPane;\n}());\nexport { HelloWorldPropertyPane };\n"
+    },
+    {
+      "id": "26ea",
+      "identifier": "external \"@microsoft/sp-property-pane\"",
+      "name": "external \"@microsoft/sp-property-pane\"",
+      "index": 7,
+      "index2": 6,
+      "size": 42,
+      "built": true,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [],
+      "issuer": "/Users/theoharris/Desktop/HSH Outlook Card/node_modules/source-map-loader/index.js!/Users/theoharris/Desktop/HSH Outlook Card/lib/adaptiveCardExtensions/helloWorld/HelloWorldPropertyPane.js",
+      "issuerId": "09z0",
+      "issuerName": "./lib/adaptiveCardExtensions/helloWorld/HelloWorldPropertyPane.js",
+      "issuerPath": [
+        {
+          "id": "T4Pj",
+          "identifier": "/Users/theoharris/Desktop/HSH Outlook Card/node_modules/source-map-loader/index.js!/Users/theoharris/Desktop/HSH Outlook Card/lib/adaptiveCardExtensions/helloWorld/HelloWorldAdaptiveCardExtension.js",
+          "name": "./lib/adaptiveCardExtensions/helloWorld/HelloWorldAdaptiveCardExtension.js"
+        },
+        {
+          "id": "09z0",
+          "identifier": "/Users/theoharris/Desktop/HSH Outlook Card/node_modules/source-map-loader/index.js!/Users/theoharris/Desktop/HSH Outlook Card/lib/adaptiveCardExtensions/helloWorld/HelloWorldPropertyPane.js",
+          "name": "./lib/adaptiveCardExtensions/helloWorld/HelloWorldPropertyPane.js"
+        }
+      ],
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "assets": [],
+      "reasons": [
+        {
+          "moduleId": "09z0",
+          "moduleIdentifier": "/Users/theoharris/Desktop/HSH Outlook Card/node_modules/source-map-loader/index.js!/Users/theoharris/Desktop/HSH Outlook Card/lib/adaptiveCardExtensions/helloWorld/HelloWorldPropertyPane.js",
+          "module": "./lib/adaptiveCardExtensions/helloWorld/HelloWorldPropertyPane.js",
+          "moduleName": "./lib/adaptiveCardExtensions/helloWorld/HelloWorldPropertyPane.js",
+          "type": "harmony side effect evaluation",
+          "userRequest": "@microsoft/sp-property-pane",
+          "loc": "1:0-68"
+        },
+        {
+          "moduleId": "09z0",
+          "moduleIdentifier": "/Users/theoharris/Desktop/HSH Outlook Card/node_modules/source-map-loader/index.js!/Users/theoharris/Desktop/HSH Outlook Card/lib/adaptiveCardExtensions/helloWorld/HelloWorldPropertyPane.js",
+          "module": "./lib/adaptiveCardExtensions/helloWorld/HelloWorldPropertyPane.js",
+          "moduleName": "./lib/adaptiveCardExtensions/helloWorld/HelloWorldPropertyPane.js",
+          "type": "harmony import specifier",
+          "userRequest": "@microsoft/sp-property-pane",
+          "loc": "16:32-53"
+        },
+        {
+          "moduleId": "09z0",
+          "moduleIdentifier": "/Users/theoharris/Desktop/HSH Outlook Card/node_modules/source-map-loader/index.js!/Users/theoharris/Desktop/HSH Outlook Card/lib/adaptiveCardExtensions/helloWorld/HelloWorldPropertyPane.js",
+          "module": "./lib/adaptiveCardExtensions/helloWorld/HelloWorldPropertyPane.js",
+          "moduleName": "./lib/adaptiveCardExtensions/helloWorld/HelloWorldPropertyPane.js",
+          "type": "harmony import specifier",
+          "userRequest": "@microsoft/sp-property-pane",
+          "loc": "19:32-53"
+        }
+      ],
+      "providedExports": null,
+      "optimizationBailout": [],
+      "depth": 2
+    },
+    {
+      "id": "5nUA",
+      "identifier": "/Users/theoharris/Desktop/HSH Outlook Card/node_modules/file-loader/dist/cjs.js??ref--7-0!/Users/theoharris/Desktop/HSH Outlook Card/lib/adaptiveCardExtensions/helloWorld/assets/SharePointLogo.svg",
+      "name": "./lib/adaptiveCardExtensions/helloWorld/assets/SharePointLogo.svg",
+      "index": 5,
+      "index2": 4,
+      "size": 97,
+      "cacheable": true,
+      "built": true,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        "hello-world-adaptive-card-extension"
+      ],
+      "issuer": "/Users/theoharris/Desktop/HSH Outlook Card/node_modules/source-map-loader/index.js!/Users/theoharris/Desktop/HSH Outlook Card/lib/adaptiveCardExtensions/helloWorld/HelloWorldAdaptiveCardExtension.js",
+      "issuerId": "T4Pj",
+      "issuerName": "./lib/adaptiveCardExtensions/helloWorld/HelloWorldAdaptiveCardExtension.js",
+      "issuerPath": [
+        {
+          "id": "T4Pj",
+          "identifier": "/Users/theoharris/Desktop/HSH Outlook Card/node_modules/source-map-loader/index.js!/Users/theoharris/Desktop/HSH Outlook Card/lib/adaptiveCardExtensions/helloWorld/HelloWorldAdaptiveCardExtension.js",
+          "name": "./lib/adaptiveCardExtensions/helloWorld/HelloWorldAdaptiveCardExtension.js"
+        }
+      ],
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "assets": [
+        "SharePointLogo_0101288365319b852f2a3b625daa3a5d.svg"
+      ],
+      "reasons": [
+        {
+          "moduleId": "T4Pj",
+          "moduleIdentifier": "/Users/theoharris/Desktop/HSH Outlook Card/node_modules/source-map-loader/index.js!/Users/theoharris/Desktop/HSH Outlook Card/lib/adaptiveCardExtensions/helloWorld/HelloWorldAdaptiveCardExtension.js",
+          "module": "./lib/adaptiveCardExtensions/helloWorld/HelloWorldAdaptiveCardExtension.js",
+          "moduleName": "./lib/adaptiveCardExtensions/helloWorld/HelloWorldAdaptiveCardExtension.js",
+          "type": "cjs require",
+          "userRequest": "./assets/SharePointLogo.svg",
+          "loc": "210:51-89"
+        }
+      ],
+      "providedExports": null,
+      "optimizationBailout": [],
+      "depth": 1,
+      "source": "module.exports = __webpack_public_path__ + \"SharePointLogo_0101288365319b852f2a3b625daa3a5d.svg\";"
+    },
+    {
+      "id": "8Kdd",
+      "identifier": "/Users/theoharris/Desktop/HSH Outlook Card/node_modules/source-map-loader/index.js!/Users/theoharris/Desktop/HSH Outlook Card/lib/adaptiveCardExtensions/helloWorld/cardView/CardView.js",
+      "name": "./lib/adaptiveCardExtensions/helloWorld/cardView/CardView.js",
+      "index": 2,
+      "index2": 1,
+      "size": 2459,
+      "cacheable": true,
+      "built": true,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        "hello-world-adaptive-card-extension"
+      ],
+      "issuer": "/Users/theoharris/Desktop/HSH Outlook Card/node_modules/source-map-loader/index.js!/Users/theoharris/Desktop/HSH Outlook Card/lib/adaptiveCardExtensions/helloWorld/HelloWorldAdaptiveCardExtension.js",
+      "issuerId": "T4Pj",
+      "issuerName": "./lib/adaptiveCardExtensions/helloWorld/HelloWorldAdaptiveCardExtension.js",
+      "issuerPath": [
+        {
+          "id": "T4Pj",
+          "identifier": "/Users/theoharris/Desktop/HSH Outlook Card/node_modules/source-map-loader/index.js!/Users/theoharris/Desktop/HSH Outlook Card/lib/adaptiveCardExtensions/helloWorld/HelloWorldAdaptiveCardExtension.js",
+          "name": "./lib/adaptiveCardExtensions/helloWorld/HelloWorldAdaptiveCardExtension.js"
+        }
+      ],
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "assets": [],
+      "reasons": [
+        {
+          "moduleId": "T4Pj",
+          "moduleIdentifier": "/Users/theoharris/Desktop/HSH Outlook Card/node_modules/source-map-loader/index.js!/Users/theoharris/Desktop/HSH Outlook Card/lib/adaptiveCardExtensions/helloWorld/HelloWorldAdaptiveCardExtension.js",
+          "module": "./lib/adaptiveCardExtensions/helloWorld/HelloWorldAdaptiveCardExtension.js",
+          "moduleName": "./lib/adaptiveCardExtensions/helloWorld/HelloWorldAdaptiveCardExtension.js",
+          "type": "harmony side effect evaluation",
+          "userRequest": "./cardView/CardView",
+          "loc": "58:0-47"
+        },
+        {
+          "moduleId": "T4Pj",
+          "moduleIdentifier": "/Users/theoharris/Desktop/HSH Outlook Card/node_modules/source-map-loader/index.js!/Users/theoharris/Desktop/HSH Outlook Card/lib/adaptiveCardExtensions/helloWorld/HelloWorldAdaptiveCardExtension.js",
+          "module": "./lib/adaptiveCardExtensions/helloWorld/HelloWorldAdaptiveCardExtension.js",
+          "moduleName": "./lib/adaptiveCardExtensions/helloWorld/HelloWorldAdaptiveCardExtension.js",
+          "type": "harmony import specifier",
+          "userRequest": "./cardView/CardView",
+          "loc": "108:100-108"
+        }
+      ],
+      "providedExports": [
+        "CardView"
+      ],
+      "optimizationBailout": [],
+      "depth": 1,
+      "source": "var __extends = (this && this.__extends) || (function () {\n    var extendStatics = function (d, b) {\n        extendStatics = Object.setPrototypeOf ||\n            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||\n            function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };\n        return extendStatics(d, b);\n    };\n    return function (d, b) {\n        extendStatics(d, b);\n        function __() { this.constructor = d; }\n        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());\n    };\n})();\nimport { BaseBasicCardView } from '@microsoft/sp-adaptive-card-extension-base';\nimport { QUICK_VIEW_REGISTRY_ID } from '../HelloWorldAdaptiveCardExtension';\nvar CardView = /** @class */ (function (_super) {\n    __extends(CardView, _super);\n    function CardView() {\n        return _super !== null && _super.apply(this, arguments) || this;\n    }\n    Object.defineProperty(CardView.prototype, \"cardButtons\", {\n        get: function () {\n            return [\n                {\n                    title: \"Preview Messages\",\n                    action: {\n                        type: 'QuickView',\n                        parameters: {\n                            view: QUICK_VIEW_REGISTRY_ID\n                        }\n                    }\n                },\n                {\n                    title: 'Outlook',\n                    action: {\n                        type: 'ExternalLink',\n                        parameters: {\n                            target: \"http://outlook.office.com\"\n                        }\n                    }\n                }\n            ];\n        },\n        enumerable: true,\n        configurable: true\n    });\n    Object.defineProperty(CardView.prototype, \"data\", {\n        get: function () {\n            return {\n                primaryText: \"You have \" + this.state.unreadCount + \" unread messages\",\n                unreadCount: this.state.unreadCount\n            };\n        },\n        enumerable: true,\n        configurable: true\n    });\n    Object.defineProperty(CardView.prototype, \"onCardSelection\", {\n        get: function () {\n            return {\n                type: 'QuickView',\n                parameters: {\n                    view: QUICK_VIEW_REGISTRY_ID\n                }\n            };\n        },\n        enumerable: true,\n        configurable: true\n    });\n    return CardView;\n}(BaseBasicCardView));\nexport { CardView };\n"
+    },
+    {
+      "id": "I6O9",
+      "identifier": "external \"@microsoft/sp-loader\"",
+      "name": "external \"@microsoft/sp-loader\"",
+      "index": null,
+      "index2": null,
+      "size": 42,
+      "built": true,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        "hello-world-adaptive-card-extension"
+      ],
+      "issuer": null,
+      "issuerId": null,
+      "issuerName": null,
+      "issuerPath": null,
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "assets": [],
+      "reasons": [],
+      "providedExports": null,
+      "optimizationBailout": [],
+      "depth": null
+    },
+    {
+      "id": "T4Pj",
+      "identifier": "/Users/theoharris/Desktop/HSH Outlook Card/node_modules/source-map-loader/index.js!/Users/theoharris/Desktop/HSH Outlook Card/lib/adaptiveCardExtensions/helloWorld/HelloWorldAdaptiveCardExtension.js",
+      "name": "./lib/adaptiveCardExtensions/helloWorld/HelloWorldAdaptiveCardExtension.js",
+      "index": 0,
+      "index2": 5,
+      "size": 11907,
+      "cacheable": true,
+      "built": true,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        "hello-world-adaptive-card-extension"
+      ],
+      "issuer": null,
+      "issuerId": null,
+      "issuerName": null,
+      "issuerPath": null,
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "assets": [],
+      "reasons": [
+        {
+          "moduleId": "8Kdd",
+          "moduleIdentifier": "/Users/theoharris/Desktop/HSH Outlook Card/node_modules/source-map-loader/index.js!/Users/theoharris/Desktop/HSH Outlook Card/lib/adaptiveCardExtensions/helloWorld/cardView/CardView.js",
+          "module": "./lib/adaptiveCardExtensions/helloWorld/cardView/CardView.js",
+          "moduleName": "./lib/adaptiveCardExtensions/helloWorld/cardView/CardView.js",
+          "type": "harmony side effect evaluation",
+          "userRequest": "../HelloWorldAdaptiveCardExtension",
+          "loc": "15:0-76"
+        },
+        {
+          "moduleId": "8Kdd",
+          "moduleIdentifier": "/Users/theoharris/Desktop/HSH Outlook Card/node_modules/source-map-loader/index.js!/Users/theoharris/Desktop/HSH Outlook Card/lib/adaptiveCardExtensions/helloWorld/cardView/CardView.js",
+          "module": "./lib/adaptiveCardExtensions/helloWorld/cardView/CardView.js",
+          "moduleName": "./lib/adaptiveCardExtensions/helloWorld/cardView/CardView.js",
+          "type": "harmony import specifier",
+          "userRequest": "../HelloWorldAdaptiveCardExtension",
+          "loc": "29:34-56"
+        },
+        {
+          "moduleId": "8Kdd",
+          "moduleIdentifier": "/Users/theoharris/Desktop/HSH Outlook Card/node_modules/source-map-loader/index.js!/Users/theoharris/Desktop/HSH Outlook Card/lib/adaptiveCardExtensions/helloWorld/cardView/CardView.js",
+          "module": "./lib/adaptiveCardExtensions/helloWorld/cardView/CardView.js",
+          "moduleName": "./lib/adaptiveCardExtensions/helloWorld/cardView/CardView.js",
+          "type": "harmony import specifier",
+          "userRequest": "../HelloWorldAdaptiveCardExtension",
+          "loc": "62:26-48"
+        },
+        {
+          "moduleId": null,
+          "moduleIdentifier": null,
+          "module": null,
+          "moduleName": null,
+          "type": "single entry",
+          "userRequest": "/Users/theoharris/Desktop/HSH Outlook Card/lib/adaptiveCardExtensions/helloWorld/HelloWorldAdaptiveCardExtension.js",
+          "loc": "hello-world-adaptive-card-extension"
+        }
+      ],
+      "providedExports": [
+        "QUICK_VIEW_REGISTRY_ID",
+        "default"
+      ],
+      "optimizationBailout": [],
+      "depth": 0,
+      "source": "var __extends = (this && this.__extends) || (function () {\n    var extendStatics = function (d, b) {\n        extendStatics = Object.setPrototypeOf ||\n            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||\n            function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };\n        return extendStatics(d, b);\n    };\n    return function (d, b) {\n        extendStatics(d, b);\n        function __() { this.constructor = d; }\n        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());\n    };\n})();\nvar __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {\n    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }\n    return new (P || (P = Promise))(function (resolve, reject) {\n        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }\n        function rejected(value) { try { step(generator[\"throw\"](value)); } catch (e) { reject(e); } }\n        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }\n        step((generator = generator.apply(thisArg, _arguments || [])).next());\n    });\n};\nvar __generator = (this && this.__generator) || function (thisArg, body) {\n    var _ = { label: 0, sent: function() { if (t[0] & 1) throw t[1]; return t[1]; }, trys: [], ops: [] }, f, y, t, g;\n    return g = { next: verb(0), \"throw\": verb(1), \"return\": verb(2) }, typeof Symbol === \"function\" && (g[Symbol.iterator] = function() { return this; }), g;\n    function verb(n) { return function (v) { return step([n, v]); }; }\n    function step(op) {\n        if (f) throw new TypeError(\"Generator is already executing.\");\n        while (_) try {\n            if (f = 1, y && (t = op[0] & 2 ? y[\"return\"] : op[0] ? y[\"throw\"] || ((t = y[\"return\"]) && t.call(y), 0) : y.next) && !(t = t.call(y, op[1])).done) return t;\n            if (y = 0, t) op = [op[0] & 2, t.value];\n            switch (op[0]) {\n                case 0: case 1: t = op; break;\n                case 4: _.label++; return { value: op[1], done: false };\n                case 5: _.label++; y = op[1]; op = [0]; continue;\n                case 7: op = _.ops.pop(); _.trys.pop(); continue;\n                default:\n                    if (!(t = _.trys, t = t.length > 0 && t[t.length - 1]) && (op[0] === 6 || op[0] === 2)) { _ = 0; continue; }\n                    if (op[0] === 3 && (!t || (op[1] > t[0] && op[1] < t[3]))) { _.label = op[1]; break; }\n                    if (op[0] === 6 && _.label < t[1]) { _.label = t[1]; t = op; break; }\n                    if (t && _.label < t[2]) { _.label = t[2]; _.ops.push(op); break; }\n                    if (t[2]) _.ops.pop();\n                    _.trys.pop(); continue;\n            }\n            op = body.call(thisArg, _);\n        } catch (e) { op = [6, e]; y = 0; } finally { f = t = 0; }\n        if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };\n    }\n};\nvar __spreadArrays = (this && this.__spreadArrays) || function () {\n    for (var s = 0, i = 0, il = arguments.length; i < il; i++) s += arguments[i].length;\n    for (var r = Array(s), k = 0, i = 0; i < il; i++)\n        for (var a = arguments[i], j = 0, jl = a.length; j < jl; j++, k++)\n            r[k] = a[j];\n    return r;\n};\nimport { BaseAdaptiveCardExtension } from '@microsoft/sp-adaptive-card-extension-base';\nimport { CardView } from './cardView/CardView';\nimport { QuickView } from './quickView/QuickView';\nvar CARD_VIEW_REGISTRY_ID = 'HelloWorld_CARD_VIEW';\nexport var QUICK_VIEW_REGISTRY_ID = 'HelloWorld_QUICK_VIEW';\nvar HelloWorldAdaptiveCardExtension = /** @class */ (function (_super) {\n    __extends(HelloWorldAdaptiveCardExtension, _super);\n    function HelloWorldAdaptiveCardExtension() {\n        return _super !== null && _super.apply(this, arguments) || this;\n    }\n    HelloWorldAdaptiveCardExtension.prototype.onPropertyPaneFieldChanged = function () {\n        return __awaiter(this, void 0, void 0, function () {\n            return __generator(this, function (_a) {\n                switch (_a.label) {\n                    case 0:\n                        this.setState({ appliedFilters: 'isRead ne true&$count=true&$top=999' });\n                        this.applySenderFilter();\n                        this.applySubjectFilter();\n                        return [4 /*yield*/, this.getUnreadCount()];\n                    case 1:\n                        _a.sent();\n                        return [4 /*yield*/, this.getEmailDetails()];\n                    case 2:\n                        _a.sent();\n                        return [2 /*return*/, Promise.resolve()];\n                }\n            });\n        });\n    };\n    HelloWorldAdaptiveCardExtension.prototype.onInit = function () {\n        return __awaiter(this, void 0, void 0, function () {\n            return __generator(this, function (_a) {\n                switch (_a.label) {\n                    case 0:\n                        this.state = {\n                            description: this.properties.description,\n                            unreadCount: this.properties.unreadCount || 0,\n                            emails: [],\n                            filterBySenderEmail: this.properties.filterBySenderEmail,\n                            filterBySubject: this.properties.filterBySubject,\n                            appliedFilters: this.properties.appliedFilters\n                        };\n                        this.setState({ appliedFilters: 'isRead ne true&$count=true&$top=999' });\n                        this.applySenderFilter();\n                        this.applySubjectFilter();\n                        return [4 /*yield*/, this.getUnreadCount()];\n                    case 1:\n                        _a.sent();\n                        return [4 /*yield*/, this.getEmailDetails()];\n                    case 2:\n                        _a.sent();\n                        this.cardNavigator.register(CARD_VIEW_REGISTRY_ID, function () { return new CardView(); });\n                        this.quickViewNavigator.register(QUICK_VIEW_REGISTRY_ID, function () { return new QuickView(); });\n                        return [2 /*return*/, Promise.resolve()];\n                }\n            });\n        });\n    };\n    HelloWorldAdaptiveCardExtension.prototype.getUnreadCount = function () {\n        return __awaiter(this, void 0, void 0, function () {\n            var graphClient, error_1;\n            var _this = this;\n            return __generator(this, function (_a) {\n                switch (_a.label) {\n                    case 0: return [4 /*yield*/, this.context.msGraphClientFactory.getClient()];\n                    case 1:\n                        graphClient = _a.sent();\n                        _a.label = 2;\n                    case 2:\n                        _a.trys.push([2, 4, , 5]);\n                        return [4 /*yield*/, graphClient\n                                .api('/me/mailfolders/inbox/messages')\n                                .version('v1.0')\n                                .filter(this.state.appliedFilters)\n                                .get(function (error, response, rawResponse) {\n                                _this.setState({ unreadCount: response.value.length });\n                            })];\n                    case 3:\n                        _a.sent();\n                        return [3 /*break*/, 5];\n                    case 4:\n                        error_1 = _a.sent();\n                        console.log(error_1);\n                        return [3 /*break*/, 5];\n                    case 5: return [2 /*return*/];\n                }\n            });\n        });\n    };\n    HelloWorldAdaptiveCardExtension.prototype.applySenderFilter = function () {\n        if (this.properties.filterBySenderEmail) {\n            var prevFilterString = this.state.appliedFilters;\n            this.setState({ appliedFilters: \"(from/emailAddress/address) eq '\" + this.properties.filterBySenderEmail + \"'\" + ' AND ' + prevFilterString });\n        }\n        console.log('applySenderFilter', this.state.appliedFilters);\n    };\n    HelloWorldAdaptiveCardExtension.prototype.applySubjectFilter = function () {\n        if (this.properties.filterBySubject) {\n            var prevFilterString = this.state.appliedFilters;\n            this.setState({ appliedFilters: \"contains(subject, '\" + this.properties.filterBySubject + \"')\" + ' AND ' + prevFilterString });\n        }\n        console.log('applySubjectFilter', this.state.appliedFilters);\n    };\n    HelloWorldAdaptiveCardExtension.prototype.getEmailDetails = function () {\n        return __awaiter(this, void 0, void 0, function () {\n            var graphClient, error_2;\n            var _this = this;\n            return __generator(this, function (_a) {\n                switch (_a.label) {\n                    case 0: return [4 /*yield*/, this.context.msGraphClientFactory.getClient()];\n                    case 1:\n                        graphClient = _a.sent();\n                        _a.label = 2;\n                    case 2:\n                        _a.trys.push([2, 4, , 5]);\n                        return [4 /*yield*/, graphClient\n                                .api('/me/messages')\n                                .version('v1.0')\n                                .filter(this.state.appliedFilters)\n                                .get(function (error, response, rawResponse) {\n                                console.log(\"getEmailDetails response value:\", response.value);\n                                response.value.forEach(function (email) {\n                                    var emails = __spreadArrays(_this.state.emails);\n                                    emails.push({\n                                        webLink: email.webLink,\n                                        subject: email.subject,\n                                        sender: email.sender.emailAddress.name,\n                                        senderEmail: email.sender.emailAddress.address\n                                    });\n                                    _this.setState({ emails: emails });\n                                });\n                            })];\n                    case 3:\n                        _a.sent();\n                        return [3 /*break*/, 5];\n                    case 4:\n                        error_2 = _a.sent();\n                        console.log(error_2);\n                        return [3 /*break*/, 5];\n                    case 5: return [2 /*return*/];\n                }\n            });\n        });\n    };\n    Object.defineProperty(HelloWorldAdaptiveCardExtension.prototype, \"title\", {\n        get: function () {\n            return this.properties.title;\n        },\n        enumerable: true,\n        configurable: true\n    });\n    Object.defineProperty(HelloWorldAdaptiveCardExtension.prototype, \"iconProperty\", {\n        get: function () {\n            return this.properties.iconProperty || require('./assets/SharePointLogo.svg');\n        },\n        enumerable: true,\n        configurable: true\n    });\n    HelloWorldAdaptiveCardExtension.prototype.loadPropertyPaneResources = function () {\n        var _this = this;\n        return import('./HelloWorldPropertyPane')\n            .then(function (component) {\n            _this._deferredPropertyPane = new component.HelloWorldPropertyPane();\n        });\n    };\n    HelloWorldAdaptiveCardExtension.prototype.renderCard = function () {\n        return CARD_VIEW_REGISTRY_ID;\n    };\n    HelloWorldAdaptiveCardExtension.prototype.getPropertyPaneConfiguration = function () {\n        return this._deferredPropertyPane.getPropertyPaneConfiguration(this.properties);\n    };\n    return HelloWorldAdaptiveCardExtension;\n}(BaseAdaptiveCardExtension));\nexport default HelloWorldAdaptiveCardExtension;\n"
+    },
+    {
+      "id": "YBiG",
+      "identifier": "/Users/theoharris/Desktop/HSH Outlook Card/lib/adaptiveCardExtensions/helloWorld/quickView/template/QuickViewTemplate.json",
+      "name": "./lib/adaptiveCardExtensions/helloWorld/quickView/template/QuickViewTemplate.json",
+      "index": 4,
+      "index2": 2,
+      "size": 565,
+      "cacheable": true,
+      "built": true,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        "hello-world-adaptive-card-extension"
+      ],
+      "issuer": "/Users/theoharris/Desktop/HSH Outlook Card/node_modules/source-map-loader/index.js!/Users/theoharris/Desktop/HSH Outlook Card/lib/adaptiveCardExtensions/helloWorld/quickView/QuickView.js",
+      "issuerId": "r39S",
+      "issuerName": "./lib/adaptiveCardExtensions/helloWorld/quickView/QuickView.js",
+      "issuerPath": [
+        {
+          "id": "T4Pj",
+          "identifier": "/Users/theoharris/Desktop/HSH Outlook Card/node_modules/source-map-loader/index.js!/Users/theoharris/Desktop/HSH Outlook Card/lib/adaptiveCardExtensions/helloWorld/HelloWorldAdaptiveCardExtension.js",
+          "name": "./lib/adaptiveCardExtensions/helloWorld/HelloWorldAdaptiveCardExtension.js"
+        },
+        {
+          "id": "r39S",
+          "identifier": "/Users/theoharris/Desktop/HSH Outlook Card/node_modules/source-map-loader/index.js!/Users/theoharris/Desktop/HSH Outlook Card/lib/adaptiveCardExtensions/helloWorld/quickView/QuickView.js",
+          "name": "./lib/adaptiveCardExtensions/helloWorld/quickView/QuickView.js"
+        }
+      ],
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "assets": [],
+      "reasons": [
+        {
+          "moduleId": "r39S",
+          "moduleIdentifier": "/Users/theoharris/Desktop/HSH Outlook Card/node_modules/source-map-loader/index.js!/Users/theoharris/Desktop/HSH Outlook Card/lib/adaptiveCardExtensions/helloWorld/quickView/QuickView.js",
+          "module": "./lib/adaptiveCardExtensions/helloWorld/quickView/QuickView.js",
+          "moduleName": "./lib/adaptiveCardExtensions/helloWorld/quickView/QuickView.js",
+          "type": "cjs require",
+          "userRequest": "./template/QuickViewTemplate.json",
+          "loc": "31:19-63"
+        }
+      ],
+      "providedExports": [
+        "schema",
+        "type",
+        "version",
+        "body",
+        "default"
+      ],
+      "optimizationBailout": [],
+      "depth": 2,
+      "source": "{\n  \"schema\": \"http://adaptivecards.io/schemas/adaptive-card.json\",\n  \"type\": \"AdaptiveCard\",\n  \"version\": \"1.2\",\n  \"body\": [\n    {\n      \"type\": \"Container\",\n      \"$data\": \"${emails}\",\n      \"items\": [\n        {\n          \"type\": \"TextBlock\",\n          \"text\": \"${sender}:\",\n          \"weight\": \"bolder\",\n          \"size\": \"medium\"\n        },\n        {\n          \"type\": \"TextBlock\",\n          \"text\": \"${subject}\",\n          \"wrap\": true\n        }\n      ],\n      \"selectAction\": {\n        \"type\": \"Action.OpenUrl\",\n        \"url\": \"${webLink}\"\n      }\n    }\n  ]\n}"
+    },
+    {
+      "id": "lz/E",
+      "identifier": "external \"@microsoft/sp-adaptive-card-extension-base\"",
+      "name": "external \"@microsoft/sp-adaptive-card-extension-base\"",
+      "index": 1,
+      "index2": 0,
+      "size": 42,
+      "built": true,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        "hello-world-adaptive-card-extension"
+      ],
+      "issuer": "/Users/theoharris/Desktop/HSH Outlook Card/node_modules/source-map-loader/index.js!/Users/theoharris/Desktop/HSH Outlook Card/lib/adaptiveCardExtensions/helloWorld/HelloWorldAdaptiveCardExtension.js",
+      "issuerId": "T4Pj",
+      "issuerName": "./lib/adaptiveCardExtensions/helloWorld/HelloWorldAdaptiveCardExtension.js",
+      "issuerPath": [
+        {
+          "id": "T4Pj",
+          "identifier": "/Users/theoharris/Desktop/HSH Outlook Card/node_modules/source-map-loader/index.js!/Users/theoharris/Desktop/HSH Outlook Card/lib/adaptiveCardExtensions/helloWorld/HelloWorldAdaptiveCardExtension.js",
+          "name": "./lib/adaptiveCardExtensions/helloWorld/HelloWorldAdaptiveCardExtension.js"
+        }
+      ],
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "assets": [],
+      "reasons": [
+        {
+          "moduleId": "8Kdd",
+          "moduleIdentifier": "/Users/theoharris/Desktop/HSH Outlook Card/node_modules/source-map-loader/index.js!/Users/theoharris/Desktop/HSH Outlook Card/lib/adaptiveCardExtensions/helloWorld/cardView/CardView.js",
+          "module": "./lib/adaptiveCardExtensions/helloWorld/cardView/CardView.js",
+          "moduleName": "./lib/adaptiveCardExtensions/helloWorld/cardView/CardView.js",
+          "type": "harmony side effect evaluation",
+          "userRequest": "@microsoft/sp-adaptive-card-extension-base",
+          "loc": "14:0-79"
+        },
+        {
+          "moduleId": "8Kdd",
+          "moduleIdentifier": "/Users/theoharris/Desktop/HSH Outlook Card/node_modules/source-map-loader/index.js!/Users/theoharris/Desktop/HSH Outlook Card/lib/adaptiveCardExtensions/helloWorld/cardView/CardView.js",
+          "module": "./lib/adaptiveCardExtensions/helloWorld/cardView/CardView.js",
+          "moduleName": "./lib/adaptiveCardExtensions/helloWorld/cardView/CardView.js",
+          "type": "harmony import specifier",
+          "userRequest": "@microsoft/sp-adaptive-card-extension-base",
+          "loc": "70:2-19"
+        },
+        {
+          "moduleId": "T4Pj",
+          "moduleIdentifier": "/Users/theoharris/Desktop/HSH Outlook Card/node_modules/source-map-loader/index.js!/Users/theoharris/Desktop/HSH Outlook Card/lib/adaptiveCardExtensions/helloWorld/HelloWorldAdaptiveCardExtension.js",
+          "module": "./lib/adaptiveCardExtensions/helloWorld/HelloWorldAdaptiveCardExtension.js",
+          "moduleName": "./lib/adaptiveCardExtensions/helloWorld/HelloWorldAdaptiveCardExtension.js",
+          "type": "harmony side effect evaluation",
+          "userRequest": "@microsoft/sp-adaptive-card-extension-base",
+          "loc": "57:0-87"
+        },
+        {
+          "moduleId": "T4Pj",
+          "moduleIdentifier": "/Users/theoharris/Desktop/HSH Outlook Card/node_modules/source-map-loader/index.js!/Users/theoharris/Desktop/HSH Outlook Card/lib/adaptiveCardExtensions/helloWorld/HelloWorldAdaptiveCardExtension.js",
+          "module": "./lib/adaptiveCardExtensions/helloWorld/HelloWorldAdaptiveCardExtension.js",
+          "moduleName": "./lib/adaptiveCardExtensions/helloWorld/HelloWorldAdaptiveCardExtension.js",
+          "type": "harmony import specifier",
+          "userRequest": "@microsoft/sp-adaptive-card-extension-base",
+          "loc": "229:2-27"
+        },
+        {
+          "moduleId": "r39S",
+          "moduleIdentifier": "/Users/theoharris/Desktop/HSH Outlook Card/node_modules/source-map-loader/index.js!/Users/theoharris/Desktop/HSH Outlook Card/lib/adaptiveCardExtensions/helloWorld/quickView/QuickView.js",
+          "module": "./lib/adaptiveCardExtensions/helloWorld/quickView/QuickView.js",
+          "moduleName": "./lib/adaptiveCardExtensions/helloWorld/quickView/QuickView.js",
+          "type": "harmony side effect evaluation",
+          "userRequest": "@microsoft/sp-adaptive-card-extension-base",
+          "loc": "14:0-82"
+        },
+        {
+          "moduleId": "r39S",
+          "moduleIdentifier": "/Users/theoharris/Desktop/HSH Outlook Card/node_modules/source-map-loader/index.js!/Users/theoharris/Desktop/HSH Outlook Card/lib/adaptiveCardExtensions/helloWorld/quickView/QuickView.js",
+          "module": "./lib/adaptiveCardExtensions/helloWorld/quickView/QuickView.js",
+          "moduleName": "./lib/adaptiveCardExtensions/helloWorld/quickView/QuickView.js",
+          "type": "harmony import specifier",
+          "userRequest": "@microsoft/sp-adaptive-card-extension-base",
+          "loc": "37:2-22"
+        }
+      ],
+      "providedExports": null,
+      "optimizationBailout": [],
+      "depth": 1
+    },
+    {
+      "id": "r39S",
+      "identifier": "/Users/theoharris/Desktop/HSH Outlook Card/node_modules/source-map-loader/index.js!/Users/theoharris/Desktop/HSH Outlook Card/lib/adaptiveCardExtensions/helloWorld/quickView/QuickView.js",
+      "name": "./lib/adaptiveCardExtensions/helloWorld/quickView/QuickView.js",
+      "index": 3,
+      "index2": 3,
+      "size": 1389,
+      "cacheable": true,
+      "built": true,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        "hello-world-adaptive-card-extension"
+      ],
+      "issuer": "/Users/theoharris/Desktop/HSH Outlook Card/node_modules/source-map-loader/index.js!/Users/theoharris/Desktop/HSH Outlook Card/lib/adaptiveCardExtensions/helloWorld/HelloWorldAdaptiveCardExtension.js",
+      "issuerId": "T4Pj",
+      "issuerName": "./lib/adaptiveCardExtensions/helloWorld/HelloWorldAdaptiveCardExtension.js",
+      "issuerPath": [
+        {
+          "id": "T4Pj",
+          "identifier": "/Users/theoharris/Desktop/HSH Outlook Card/node_modules/source-map-loader/index.js!/Users/theoharris/Desktop/HSH Outlook Card/lib/adaptiveCardExtensions/helloWorld/HelloWorldAdaptiveCardExtension.js",
+          "name": "./lib/adaptiveCardExtensions/helloWorld/HelloWorldAdaptiveCardExtension.js"
+        }
+      ],
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "assets": [],
+      "reasons": [
+        {
+          "moduleId": "T4Pj",
+          "moduleIdentifier": "/Users/theoharris/Desktop/HSH Outlook Card/node_modules/source-map-loader/index.js!/Users/theoharris/Desktop/HSH Outlook Card/lib/adaptiveCardExtensions/helloWorld/HelloWorldAdaptiveCardExtension.js",
+          "module": "./lib/adaptiveCardExtensions/helloWorld/HelloWorldAdaptiveCardExtension.js",
+          "moduleName": "./lib/adaptiveCardExtensions/helloWorld/HelloWorldAdaptiveCardExtension.js",
+          "type": "harmony side effect evaluation",
+          "userRequest": "./quickView/QuickView",
+          "loc": "59:0-50"
+        },
+        {
+          "moduleId": "T4Pj",
+          "moduleIdentifier": "/Users/theoharris/Desktop/HSH Outlook Card/node_modules/source-map-loader/index.js!/Users/theoharris/Desktop/HSH Outlook Card/lib/adaptiveCardExtensions/helloWorld/HelloWorldAdaptiveCardExtension.js",
+          "module": "./lib/adaptiveCardExtensions/helloWorld/HelloWorldAdaptiveCardExtension.js",
+          "moduleName": "./lib/adaptiveCardExtensions/helloWorld/HelloWorldAdaptiveCardExtension.js",
+          "type": "harmony import specifier",
+          "userRequest": "./quickView/QuickView",
+          "loc": "109:106-115"
+        }
+      ],
+      "providedExports": [
+        "QuickView"
+      ],
+      "optimizationBailout": [],
+      "depth": 1,
+      "source": "var __extends = (this && this.__extends) || (function () {\n    var extendStatics = function (d, b) {\n        extendStatics = Object.setPrototypeOf ||\n            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||\n            function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };\n        return extendStatics(d, b);\n    };\n    return function (d, b) {\n        extendStatics(d, b);\n        function __() { this.constructor = d; }\n        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());\n    };\n})();\nimport { BaseAdaptiveCardView } from '@microsoft/sp-adaptive-card-extension-base';\nvar QuickView = /** @class */ (function (_super) {\n    __extends(QuickView, _super);\n    function QuickView() {\n        return _super !== null && _super.apply(this, arguments) || this;\n    }\n    Object.defineProperty(QuickView.prototype, \"data\", {\n        get: function () {\n            return {\n                emails: this.state.emails\n            };\n        },\n        enumerable: true,\n        configurable: true\n    });\n    Object.defineProperty(QuickView.prototype, \"template\", {\n        get: function () {\n            return require('./template/QuickViewTemplate.json');\n        },\n        enumerable: true,\n        configurable: true\n    });\n    return QuickView;\n}(BaseAdaptiveCardView));\nexport { QuickView };\n"
+    }
+  ],
+  "filteredModules": 0,
+  "logging": {
+    "webpack.buildChunkGraph.visitModules": {
+      "entries": [],
+      "filteredEntries": 5,
+      "debug": false
+    }
+  },
+  "children": []
+}
